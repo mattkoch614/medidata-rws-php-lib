@@ -1,6 +1,8 @@
 <?php namespace Medidata\RwsPhp\Core;
 
+use Carbon\Carbon;
 use GuzzleHttp\Client;
+use GuzzleHttp\Psr7\Request;
 use Medidata\RwsPhp\Core\Requests\RwsRequest;
 use function Stringy\create as s;
 
@@ -16,6 +18,7 @@ class RwsConnection implements RwsConnectionInterface {
     protected $auth = 'none';
     protected $username, $password;
     protected $client;
+    protected $request;
 
     /**
      * RwsConnection constructor.
@@ -73,8 +76,18 @@ class RwsConnection implements RwsConnectionInterface {
             'timeout'  => $timeout,
         ]);
 
-        //TODO: Send request and deal with the response;
-        
+        $this->request = new Request($request->verb, $request->uri);
+
+        if ($request->requiresAuthentication)
+        {
+            $credentials = base64_encode("{$this->username}:{$this->password}");
+            $this->request->withHeader('Authorization', 'Basic ' . $credentials);
+        }
+
+        $start_time = Carbon::now();
+
+        return $this->client->send($this->request);
+
     }
 
     /**

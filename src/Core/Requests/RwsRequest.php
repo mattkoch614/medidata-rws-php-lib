@@ -2,7 +2,9 @@
 
 namespace Medidata\RwsPhp\Core\Requests;
 
-class RwsRequest
+abstract class RwsRequest
 {
-
+    public $verb;
+    public $requiresAuthentication;
+    public $uri;
 }
