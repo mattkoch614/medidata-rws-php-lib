@@ -3,6 +3,7 @@
 use Carbon\Carbon;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Response;
 use Medidata\RwsPhp\Core\Requests\RwsRequest;
 use function Stringy\create as s;
 
@@ -28,7 +29,7 @@ class RwsConnection implements RwsConnectionInterface {
     /**
      * Create a new instance of the RwsConnection class with a domain only (no authentication)
      *
-     * @param $domain
+     * @param string $domain
      * @param string $virtual_dir
      * @return static
      */
@@ -85,6 +86,8 @@ class RwsConnection implements RwsConnectionInterface {
         }
 
         $start_time = Carbon::now();
+
+        //TODO: implement error handling
 
         return $this->client->send($this->request);
 
