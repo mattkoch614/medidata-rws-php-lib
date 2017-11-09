@@ -4,7 +4,6 @@ use Medidata\RwsPhp\Core\Requests\RwsGetRequest;
 
 class FakeRwsGetRequest extends RwsGetRequest
 {
-
     /**
      * FakeRwsGetRequest constructor.
      */

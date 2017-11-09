@@ -1,9 +1,9 @@
 <?php namespace Medidata\RwsPhp\Core\Responses;
 
-class RwsResponse extends RWSXMLResponse
+class RwsPostResponse extends RwsResponse
 {
     public function __construct($response)
     {
-
+        parent::__construct($response);
     }
 }
