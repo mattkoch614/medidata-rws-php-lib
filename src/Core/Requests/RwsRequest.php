@@ -1,7 +1,9 @@
 <?php namespace Medidata\RwsPhp\Core\Requests;
 
 use Psr\Http\Message\ResponseInterface;
-
+/**
+ * An abstract RWS Request class.
+ */
 abstract class RwsRequest implements RwsRequestInterface
 {
     public $requiresAuthentication;

@@ -29,12 +29,12 @@ class RwsConnectionTest extends PHPUnit_Framework_TestCase{
 
       try {
           $connection->sendRequest(new FakeRwsGetRequest(), 5);
-      } catch( RwsException $e) {
+      } catch(RwsException $e) {
           //Nothing for now
       }
 
       $this->assertNotNull($connection->getLastResult());
-      
+
   }
 
 

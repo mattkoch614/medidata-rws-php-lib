@@ -4,6 +4,8 @@ use Medidata\RwsPhp\Core\Responses\RwsResponse;
 use Psr\Http\Message\ResponseInterface;
 
 /**
+ * A basic GET request.
+ *
  * @property bool requiresAuthentication
  * @property string httpMethod
  */

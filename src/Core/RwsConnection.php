@@ -100,6 +100,7 @@ class RwsConnection implements RwsConnectionInterface {
 
         try {
             $this->last_result = $this->client->send($this->request);
+
         } catch (ClientException $e) {
 
             $response = $e->getResponse();
@@ -131,6 +132,8 @@ class RwsConnection implements RwsConnectionInterface {
         } catch (TransferException $e) {
 
             throw new RwsException("Unspecified Error. {$e->getMessage()}");
+        } finally {
+            $this->request_time = $start_time->diffInSeconds(Carbon::now());
         }
 
     }
@@ -151,5 +154,14 @@ class RwsConnection implements RwsConnectionInterface {
     public function getBaseUrl()
     {
         return $this->base_url;
+    }
+
+    /**
+     * Return the request time
+     * @return mixed
+     */
+    public function getRequestTime()
+    {
+        return $this->request_time;
     }
 }
