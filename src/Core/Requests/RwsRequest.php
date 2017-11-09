@@ -4,7 +4,6 @@ use Psr\Http\Message\ResponseInterface;
 
 abstract class RwsRequest implements RwsRequestInterface
 {
-    public $verb;
     public $requiresAuthentication;
     public $uri;
     protected $httpMethod;
@@ -37,6 +36,14 @@ abstract class RwsRequest implements RwsRequestInterface
     public function getRequestObject()
     {
         return $this->requestObject;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHttpMethod()
+    {
+        return $this->httpMethod;
     }
 
 }

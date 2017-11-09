@@ -1,5 +1,6 @@
 <?php namespace Medidata\RwsPhp\Tests\Feature;
 
+use Medidata\RwsPhp\Core\Exceptions\RwsException;
 use Medidata\RwsPhp\Core\RwsConnection;
 use Medidata\RwsPhp\Tests\Feature\Fakes\FakeRwsGetRequest;
 use Mockery;
@@ -23,12 +24,17 @@ class RwsConnectionTest extends PHPUnit_Framework_TestCase{
   /** @test */
   public function it_can_retrieve_the_last_result()
   {
+      //innovate is the Medidata RAVE test harness
       $connection = RwsConnection::withDomain('innovate');
 
-      $connection->sendRequest(new FakeRwsGetRequest());
+      try {
+          $connection->sendRequest(new FakeRwsGetRequest(), 5);
+      } catch( RwsException $e) {
+          //Nothing for now
+      }
 
-      //TODO: Assert connection can get last result
-
+      $this->assertNotNull($connection->getLastResult());
+      
   }
 
 

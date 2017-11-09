@@ -2,9 +2,13 @@
 
 use Carbon\Carbon;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ServerException;
+use GuzzleHttp\Exception\TransferException;
 use GuzzleHttp\Psr7\Request;
-use GuzzleHttp\Psr7\Response;
+use Medidata\RwsPhp\Core\Exceptions\RwsException;
 use Medidata\RwsPhp\Core\Requests\RwsRequest;
+use Medidata\RwsPhp\Core\Responses\RwsError;
 use function Stringy\create as s;
 
 /**
@@ -20,6 +24,7 @@ class RwsConnection implements RwsConnectionInterface {
     protected $username, $password;
     protected $client;
     protected $request;
+    protected $last_result;
 
     /**
      * RwsConnection constructor.
@@ -37,7 +42,7 @@ class RwsConnection implements RwsConnectionInterface {
     {
         $connection = new static;
         $connection->domain = s($domain)->startsWith('http') ? $domain : "https://{$domain}.mdsol.com";
-        $connection->base_url = "{$domain}/{$virtual_dir}";
+        $connection->base_url = "{$connection->domain}/{$virtual_dir}";
         $connection->request_time = 0;
         return $connection;
     }
@@ -66,7 +71,8 @@ class RwsConnection implements RwsConnectionInterface {
      *
      * @param RwsRequest $request
      * @param null $timeout
-     * @return mixed
+     * @return void
+     * @throws RwsException
      */
     public function sendRequest(RwsRequest $request, $timeout = null)
     {
@@ -77,7 +83,7 @@ class RwsConnection implements RwsConnectionInterface {
             'timeout'  => $timeout,
         ]);
 
-        $this->request = new Request($request->verb, $request->uri);
+        $this->request = new Request($request->getHttpMethod(), $request->uri);
 
         if ($request->requiresAuthentication)
         {
@@ -85,11 +91,47 @@ class RwsConnection implements RwsConnectionInterface {
             $this->request->withHeader('Authorization', 'Basic ' . $credentials);
         }
 
+        if ($request->getHttpMethod() == 'POST')
+        {
+            $this->request->withAddedHeader('Content-Type', 'text/xml');
+        }
+
         $start_time = Carbon::now();
 
-        //TODO: implement error handling
+        try {
+            $this->last_result = $this->client->send($this->request);
+        } catch (ClientException $e) {
 
-        return $this->client->send($this->request);
+            $response = $e->getResponse();
+            $this->last_result = $response;
+            $content = $response->getBody()->getContents();
+
+            //400 level errors
+            if (s($content)->startsWith("<Response"))
+            {
+                throw new RwsException($content);
+            }
+            else if (s($content)->contains("<html"))
+            {
+                throw new RWSException("IIS Error: {$content}");
+            }
+            else if (s($content)->contains("<h2>HTTP Error 401.0 - Unauthorized</h2>"))
+            {
+                throw new RWSException("Unauthorized: {$content}");
+            }
+            else
+            {
+                throw RWSException::withRwsException($content, new RwsError($content));
+            }
+
+        } catch (ServerException $e) {
+
+            throw new RWSException("Server Error (500) - {$e->getResponse()->getBody()->getContents()}");
+
+        } catch (TransferException $e) {
+
+            throw new RwsException("Unspecified Error. {$e->getMessage()}");
+        }
 
     }
 
@@ -99,6 +141,15 @@ class RwsConnection implements RwsConnectionInterface {
      */
     public function getLastResult()
     {
-        // TODO: Implement getLastResult() method.
+        return $this->last_result;
+    }
+
+    /**
+     * Get the base URL for the connection
+     * @return mixed
+     */
+    public function getBaseUrl()
+    {
+        return $this->base_url;
     }
 }
