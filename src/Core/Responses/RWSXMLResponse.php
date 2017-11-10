@@ -1,11 +1,11 @@
 <?php namespace Medidata\RwsPhp\Core\Responses;
 
-use Sabre\Xml\Reader;
+use Sabre\Xml\Service;
 
 abstract class RWSXMLResponse implements RwsResponseInterface
 {
     protected $xmlString;
-    protected $xmlRootNode;
+    protected $xmlArray;
 
     /**
      * Named constructor, instantiate from an XML string.
@@ -17,10 +17,8 @@ abstract class RWSXMLResponse implements RwsResponseInterface
         $response = new static;
         $response->xmlString = $xmlString;
 
-        $reader = new Reader();
-        $reader->xml($xmlString);
-        $response->xmlRootNode = $reader->parse();
-
+        $service = new Service();
+        $response->xmlArray = $service->parse($xmlString);
         return $response;
     }
 
@@ -35,11 +33,11 @@ abstract class RWSXMLResponse implements RwsResponseInterface
     }
 
     /**
-     * The XML root node of the response.
+     * The array of key value pairs the that represent the XML object.
      * @return mixed
      */
-    public function getXmlRootNode()
+    public function getXmlArray()
     {
-        return $this->xmlRootNode;
+        return $this->xmlArray;
     }
 }

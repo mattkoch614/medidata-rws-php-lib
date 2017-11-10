@@ -1,5 +1,6 @@
 <?php namespace Medidata\RwsPhp\Core\Requests;
 
+use Medidata\RwsPhp\Core\Responses\RwsPostResponse;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -20,7 +21,7 @@ abstract class RwsPostRequest extends RwsRequest
     }
 
     /**
-     * Default result for GET requests
+     * Default result for POST requests
      * @param ResponseInterface $response
      * @return RwsPostResponse|mixed
      */

@@ -19,7 +19,7 @@ class RwsException extends \Exception
      * @param RwsError $error
      * @return static
      */
-    public static function withRwsException($message = "", RwsError $error)
+    public static function withRwsError($message = "", RwsError $error)
     {
         $exception = new self($message);
         $exception->rwsError = $error;

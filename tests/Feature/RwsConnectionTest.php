@@ -1,5 +1,9 @@
 <?php namespace Medidata\RwsPhp\Tests\Feature;
 
+use GuzzleHttp\Client;
+use GuzzleHttp\Handler\MockHandler;
+use GuzzleHttp\HandlerStack;
+use GuzzleHttp\Psr7\Response;
 use Medidata\RwsPhp\Core\Exceptions\RwsException;
 use Medidata\RwsPhp\Core\RwsConnection;
 use Medidata\RwsPhp\Tests\Feature\Fakes\FakeRwsGetRequest;
@@ -11,31 +15,33 @@ use PHPUnit_Framework_TestCase;
 */
 class RwsConnectionTest extends PHPUnit_Framework_TestCase{
 
-  /**
-  * Check if RwsConnection has any syntax errors.
-  */
-  public function testIsThereAnySyntaxError()
-  {
-      $var = RwsConnection::withDomain('innovate');
-      $this->assertTrue(is_object($var));
-      unset($var);
-  }
+    private $mockClient;
+    public function setUp()
+    {
+        $mock = new MockHandler([
+            new Response(200, ['X-foo' => 'Bar'])
+        ]);
+        $handler = HandlerStack::create($mock);
+        $this->mockClient = new Client(['handler' => $handler]);
+    }
 
-  /** @test */
-  public function it_can_retrieve_the_last_result()
-  {
-      //innovate is the Medidata RAVE test harness
-      $connection = RwsConnection::withDomain('innovate');
+    /**
+     * Check if RwsConnection has any syntax errors.
+    */
+    public function testIsThereAnySyntaxError()
+    {
+        $var = RwsConnection::withDomain('innovate');
+        $this->assertTrue(is_object($var));
+        unset($var);
+    }
 
-      try {
-          $connection->sendRequest(new FakeRwsGetRequest(), 5);
-      } catch(RwsException $e) {
-          //Nothing for now
-      }
-
-      $this->assertNotNull($connection->getLastResult());
-
-  }
+    /** @test */
+    public function it_can_retrieve_the_last_result()
+    {
+        $connection = RwsConnection::withDomain('fake-url', 'Test', $this->mockClient);
+        $connection->sendRequest(new FakeRwsGetRequest(), 5);
+        $this->assertNotNull($connection->getLastResult());
+    }
 
 
 }

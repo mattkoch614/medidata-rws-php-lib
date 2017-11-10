@@ -28,19 +28,24 @@ class RwsConnection implements RwsConnectionInterface {
 
     /**
      * RwsConnection constructor.
+     * @param Client|null $httpClient
      */
-    private function __construct() {}
+    private function __construct(Client $httpClient = null)
+    {
+        $this->client = $httpClient;
+    }
 
     /**
      * Create a new instance of the RwsConnection class with a domain only (no authentication)
      *
      * @param string $domain
      * @param string $virtual_dir
+     * @param Client|null $httpClient
      * @return static
      */
-    public static function withDomain($domain, $virtual_dir = 'RaveWebServices')
+    public static function withDomain($domain, $virtual_dir = 'RaveWebServices', Client $httpClient = null)
     {
-        $connection = new static;
+        $connection = new self($httpClient);
         $connection->domain = s($domain)->startsWith('http') ? $domain : "https://{$domain}.mdsol.com";
         $connection->base_url = "{$connection->domain}/{$virtual_dir}";
         $connection->request_time = 0;
@@ -54,11 +59,12 @@ class RwsConnection implements RwsConnectionInterface {
      * @param $username
      * @param $password
      * @param string $virtual_dir
+     * @param Client|null $httpClient
      * @return static
      */
-    public static function withBasicAuthentication($domain, $username, $password, $virtual_dir = 'RaveWebServices')
+    public static function withBasicAuthentication($domain, $username, $password, $virtual_dir = 'RaveWebServices', Client $httpClient = null)
     {
-        $connection = self::withDomain($domain, $virtual_dir);
+        $connection = self::withDomain($domain, $virtual_dir, $httpClient);
         $connection->auth = 'basic';
         $connection->username = $username;
         $connection->password = $password;
@@ -76,12 +82,12 @@ class RwsConnection implements RwsConnectionInterface {
      */
     public function sendRequest(RwsRequest $request, $timeout = null)
     {
-        $this->client = new Client([
+        $this->client == null ? $this->client =  new Client([
             // Base URI is used with relative requests
             'base_uri' => $this->base_url,
             // You can set any number of default request options.
             'timeout'  => $timeout,
-        ]);
+        ]) : $this->client;
 
         $this->request = new Request($request->getHttpMethod(), $request->uri);
 
@@ -99,6 +105,7 @@ class RwsConnection implements RwsConnectionInterface {
         $start_time = Carbon::now();
 
         try {
+
             $this->last_result = $this->client->send($this->request);
 
         } catch (ClientException $e) {
@@ -122,7 +129,7 @@ class RwsConnection implements RwsConnectionInterface {
             }
             else
             {
-                throw RWSException::withRwsException($content, new RwsError($content));
+                throw RWSException::withRwsError($content, new RwsError($content));
             }
 
         } catch (ServerException $e) {
@@ -132,9 +139,12 @@ class RwsConnection implements RwsConnectionInterface {
         } catch (TransferException $e) {
 
             throw new RwsException("Unspecified Error. {$e->getMessage()}");
+
         } finally {
             $this->request_time = $start_time->diffInSeconds(Carbon::now());
         }
+
+        
 
     }
 
