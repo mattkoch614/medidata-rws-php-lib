@@ -1,0 +1,25 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolRangeTypesType:
+    properties:
+        rangeTypeName:
+            expose: true
+            access_type: public_method
+            serialized_name: RangeTypeName
+            accessor:
+                getter: getRangeTypeName
+                setter: setRangeTypeName
+            xml_attribute: true
+            type: string
+        labVariableMapping:
+            expose: true
+            access_type: public_method
+            serialized_name: LabVariableMapping
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getLabVariableMapping
+                setter: setLabVariableMapping
+            xml_list:
+                inline: true
+                entry_name: LabVariableMapping
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\LabVariableMapping>

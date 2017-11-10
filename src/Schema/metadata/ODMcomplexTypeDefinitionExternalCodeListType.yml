@@ -1,0 +1,38 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionExternalCodeListType:
+    properties:
+        dictionary:
+            expose: true
+            access_type: public_method
+            serialized_name: Dictionary
+            accessor:
+                getter: getDictionary
+                setter: setDictionary
+            xml_attribute: true
+            type: string
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: Version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        href:
+            expose: true
+            access_type: public_method
+            serialized_name: href
+            accessor:
+                getter: getHref
+                setter: setHref
+            xml_attribute: true
+            type: string
+        ref:
+            expose: true
+            access_type: public_method
+            serialized_name: ref
+            accessor:
+                getter: getRef
+                setter: setRef
+            xml_attribute: true
+            type: string

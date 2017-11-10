@@ -1,0 +1,20 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolStudyPeriodRefType:
+    properties:
+        studyPeriodOID:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyPeriodOID
+            accessor:
+                getter: getStudyPeriodOID
+                setter: setStudyPeriodOID
+            xml_attribute: true
+            type: string
+        orderNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: OrderNumber
+            accessor:
+                getter: getOrderNumber
+                setter: setOrderNumber
+            xml_attribute: true
+            type: integer

@@ -1,0 +1,79 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionReferenceDataType:
+    properties:
+        studyOID:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyOID
+            accessor:
+                getter: getStudyOID
+                setter: setStudyOID
+            xml_attribute: true
+            type: string
+        metaDataVersionOID:
+            expose: true
+            access_type: public_method
+            serialized_name: MetaDataVersionOID
+            accessor:
+                getter: getMetaDataVersionOID
+                setter: setMetaDataVersionOID
+            xml_attribute: true
+            type: string
+        itemGroupData:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemGroupData
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemGroupData
+                setter: setItemGroupData
+            xml_list:
+                inline: true
+                entry_name: ItemGroupData
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemGroupData>
+        auditRecords:
+            expose: true
+            access_type: public_method
+            serialized_name: AuditRecords
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAuditRecords
+                setter: setAuditRecords
+            type: array<Medidata\RwsPhp\Schema\ODM\AuditRecord>
+            xml_list:
+                inline: false
+                entry_name: AuditRecord
+                skip_when_empty: true
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+        signatures:
+            expose: true
+            access_type: public_method
+            serialized_name: Signatures
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getSignatures
+                setter: setSignatures
+            type: array<Medidata\RwsPhp\Schema\ODM\Signature>
+            xml_list:
+                inline: false
+                entry_name: Signature
+                skip_when_empty: true
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+        annotations:
+            expose: true
+            access_type: public_method
+            serialized_name: Annotations
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAnnotations
+                setter: setAnnotations
+            type: array<Medidata\RwsPhp\Schema\ODM\Annotation>
+            xml_list:
+                inline: false
+                entry_name: Annotation
+                skip_when_empty: true
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'

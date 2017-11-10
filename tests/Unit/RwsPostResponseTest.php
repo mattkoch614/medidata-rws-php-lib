@@ -14,19 +14,10 @@ class RwsPostResponseTest extends PHPUnit_Framework_TestCase
         $response = new RwsPostResponse($responseObject);
     }
 
-    private $response1 = '<?xml version="1.0" encoding="utf-8" ?>
-                            <ODM FileType="Snapshot" ODMVersion="1.3" xmlns:mdsol="http://mdsol.com/ns/odm/metadata">
-                                <ClinicalData StudyOID="MediFlex(Dev)">
-                                    <SubjectData SubjectKey="MJK">
-                                        <SiteRef LocationOID="1" />
-                                         <StudyEventData StudyEventOID="LAB" StudyEventRepeatKey="1">
-                                            <FormData FormOID="TEST" FormRepeatKey="1">
-                                                <ItemGroupData ItemGroupOID="TEST_LOG_LINE">
-                                                    <ItemData ItemOID="TEST.INIT" Value="Test"></ItemData>
-                                                </ItemGroupData>
-                                            </FormData>
-                                        </StudyEventData>
-                                    </SubjectData>
-                                </ClinicalData>
-                            </ODM>';
+    private $response1 = '<Response ReferenceNumber="82e942b0-48e8-4cf4-b299-51e2b6a89a1b"
+                    InboundODMFileOID=""
+                    IsTransactionSuccessful=1"
+                    SuccessStatistics="Rave objects touched: Subjects=0; Folders=0; Forms=0; Fields=0; LogLines=0" NewRecords=""
+                    SubjectNumberInStudy="999" SubjectNumberInStudySite="23">
+             </Response>';
 }

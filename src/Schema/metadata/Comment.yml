@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\Comment:
+    xml_root_name: Comment
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'

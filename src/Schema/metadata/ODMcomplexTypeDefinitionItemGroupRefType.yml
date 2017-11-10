@@ -1,0 +1,38 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionItemGroupRefType:
+    properties:
+        itemGroupOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemGroupOID
+            accessor:
+                getter: getItemGroupOID
+                setter: setItemGroupOID
+            xml_attribute: true
+            type: string
+        orderNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: OrderNumber
+            accessor:
+                getter: getOrderNumber
+                setter: setOrderNumber
+            xml_attribute: true
+            type: integer
+        mandatory:
+            expose: true
+            access_type: public_method
+            serialized_name: Mandatory
+            accessor:
+                getter: getMandatory
+                setter: setMandatory
+            xml_attribute: true
+            type: string
+        collectionExceptionConditionOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionExceptionConditionOID
+            accessor:
+                getter: getCollectionExceptionConditionOID
+                setter: setCollectionExceptionConditionOID
+            xml_attribute: true
+            type: string

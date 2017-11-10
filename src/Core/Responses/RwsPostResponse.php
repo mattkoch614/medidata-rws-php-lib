@@ -11,9 +11,7 @@ class RwsPostResponse extends RwsResponse
     {
         parent::__construct($response);
 
-        dd($this->xmlArray);
-
-        $this->SubjectNumberInStudy = $this->xmlArray[0]->Test;
     }
+
 
 }

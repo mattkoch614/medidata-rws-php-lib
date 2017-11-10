@@ -1,0 +1,100 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionCodeListType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        dataType:
+            expose: true
+            access_type: public_method
+            serialized_name: DataType
+            accessor:
+                getter: getDataType
+                setter: setDataType
+            xml_attribute: true
+            type: string
+        sASFormatName:
+            expose: true
+            access_type: public_method
+            serialized_name: SASFormatName
+            accessor:
+                getter: getSASFormatName
+                setter: setSASFormatName
+            xml_attribute: true
+            type: string
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: Medidata\RwsPhp\Schema\ODM\Description
+        codeListItem:
+            expose: true
+            access_type: public_method
+            serialized_name: CodeListItem
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getCodeListItem
+                setter: setCodeListItem
+            xml_list:
+                inline: true
+                entry_name: CodeListItem
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\CodeListItem>
+        externalCodeList:
+            expose: true
+            access_type: public_method
+            serialized_name: ExternalCodeList
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getExternalCodeList
+                setter: setExternalCodeList
+            type: Medidata\RwsPhp\Schema\ODM\ExternalCodeList
+        enumeratedItem:
+            expose: true
+            access_type: public_method
+            serialized_name: EnumeratedItem
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getEnumeratedItem
+                setter: setEnumeratedItem
+            xml_list:
+                inline: true
+                entry_name: EnumeratedItem
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\EnumeratedItem>
+        alias:
+            expose: true
+            access_type: public_method
+            serialized_name: Alias
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAlias
+                setter: setAlias
+            xml_list:
+                inline: true
+                entry_name: Alias
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Alias>

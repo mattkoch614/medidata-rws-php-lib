@@ -1,0 +1,56 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolProtocolDeviationType:
+    properties:
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_attribute: true
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string
+        class:
+            expose: true
+            access_type: public_method
+            serialized_name: Class
+            accessor:
+                getter: getClass
+                setter: setClass
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: Code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string
+        protocolDeviationRepeatKey:
+            expose: true
+            access_type: public_method
+            serialized_name: ProtocolDeviationRepeatKey
+            accessor:
+                getter: getProtocolDeviationRepeatKey
+                setter: setProtocolDeviationRepeatKey
+            xml_attribute: true
+            type: integer
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string

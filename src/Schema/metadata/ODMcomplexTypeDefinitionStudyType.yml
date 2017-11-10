@@ -1,0 +1,45 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionStudyType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        globalVariables:
+            expose: true
+            access_type: public_method
+            serialized_name: GlobalVariables
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getGlobalVariables
+                setter: setGlobalVariables
+            type: Medidata\RwsPhp\Schema\ODM\GlobalVariables
+        basicDefinitions:
+            expose: true
+            access_type: public_method
+            serialized_name: BasicDefinitions
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getBasicDefinitions
+                setter: setBasicDefinitions
+            type: Medidata\RwsPhp\Schema\ODM\BasicDefinitions
+        metaDataVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: MetaDataVersion
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getMetaDataVersion
+                setter: setMetaDataVersion
+            xml_list:
+                inline: true
+                entry_name: MetaDataVersion
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\MetaDataVersion>

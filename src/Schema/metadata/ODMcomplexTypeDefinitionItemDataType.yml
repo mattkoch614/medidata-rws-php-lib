@@ -1,0 +1,82 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionItemDataType:
+    properties:
+        itemOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemOID
+            accessor:
+                getter: getItemOID
+                setter: setItemOID
+            xml_attribute: true
+            type: string
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string
+        isNull:
+            expose: true
+            access_type: public_method
+            serialized_name: IsNull
+            accessor:
+                getter: getIsNull
+                setter: setIsNull
+            xml_attribute: true
+            type: string
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_attribute: true
+            type: string
+        auditRecord:
+            expose: true
+            access_type: public_method
+            serialized_name: AuditRecord
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAuditRecord
+                setter: setAuditRecord
+            type: Medidata\RwsPhp\Schema\ODM\AuditRecord
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: Medidata\RwsPhp\Schema\ODM\Signature
+        measurementUnitRef:
+            expose: true
+            access_type: public_method
+            serialized_name: MeasurementUnitRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getMeasurementUnitRef
+                setter: setMeasurementUnitRef
+            type: Medidata\RwsPhp\Schema\ODM\MeasurementUnitRef
+        annotation:
+            expose: true
+            access_type: public_method
+            serialized_name: Annotation
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAnnotation
+                setter: setAnnotation
+            xml_list:
+                inline: true
+                entry_name: Annotation
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Annotation>

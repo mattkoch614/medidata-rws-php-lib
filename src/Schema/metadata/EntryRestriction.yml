@@ -1,0 +1,12 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\EntryRestriction:
+    xml_root_name: EntryRestriction
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string

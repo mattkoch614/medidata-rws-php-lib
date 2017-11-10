@@ -1,0 +1,19 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolLabelType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+        position:
+            expose: true
+            access_type: public_method
+            serialized_name: Position
+            accessor:
+                getter: getPosition
+                setter: setPosition
+            xml_attribute: true
+            type: string

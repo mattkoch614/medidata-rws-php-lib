@@ -1,0 +1,11 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolCodingWorkflowRefType:
+    properties:
+        codingWorkflowOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingWorkflowOID
+            accessor:
+                getter: getCodingWorkflowOID
+                setter: setCodingWorkflowOID
+            xml_attribute: true
+            type: string

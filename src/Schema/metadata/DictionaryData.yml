@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\DictionaryData:
+    xml_root_name: DictionaryData
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'

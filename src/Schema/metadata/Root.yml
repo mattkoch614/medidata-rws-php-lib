@@ -1,0 +1,12 @@
+Medidata\RwsPhp\Schema\xlink\Root:
+    xml_root_name: root
+    xml_root_namespace: 'http://www.w3.org/1999/xlink'
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: \AnyType

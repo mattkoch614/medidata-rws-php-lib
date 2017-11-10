@@ -1,0 +1,101 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolCheckActionType:
+    properties:
+        folderOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FolderOID
+            accessor:
+                getter: getFolderOID
+                setter: setFolderOID
+            xml_attribute: true
+            type: string
+        formOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FormOID
+            accessor:
+                getter: getFormOID
+                setter: setFormOID
+            xml_attribute: true
+            type: string
+        fieldOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FieldOID
+            accessor:
+                getter: getFieldOID
+                setter: setFieldOID
+            xml_attribute: true
+            type: string
+        variableOID:
+            expose: true
+            access_type: public_method
+            serialized_name: VariableOID
+            accessor:
+                getter: getVariableOID
+                setter: setVariableOID
+            xml_attribute: true
+            type: string
+        recordPosition:
+            expose: true
+            access_type: public_method
+            serialized_name: RecordPosition
+            accessor:
+                getter: getRecordPosition
+                setter: setRecordPosition
+            xml_attribute: true
+            type: integer
+        formRepeatNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: FormRepeatNumber
+            accessor:
+                getter: getFormRepeatNumber
+                setter: setFormRepeatNumber
+            xml_attribute: true
+            type: integer
+        folderRepeatNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: FolderRepeatNumber
+            accessor:
+                getter: getFolderRepeatNumber
+                setter: setFolderRepeatNumber
+            xml_attribute: true
+            type: integer
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        string:
+            expose: true
+            access_type: public_method
+            serialized_name: String
+            accessor:
+                getter: getString
+                setter: setString
+            xml_attribute: true
+            type: string
+        options:
+            expose: true
+            access_type: public_method
+            serialized_name: Options
+            accessor:
+                getter: getOptions
+                setter: setOptions
+            xml_attribute: true
+            type: string
+        script:
+            expose: true
+            access_type: public_method
+            serialized_name: Script
+            accessor:
+                getter: getScript
+                setter: setScript
+            xml_attribute: true
+            type: string

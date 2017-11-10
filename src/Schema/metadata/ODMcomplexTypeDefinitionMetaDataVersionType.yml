@@ -1,0 +1,175 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionMetaDataVersionType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_attribute: true
+            type: string
+        include:
+            expose: true
+            access_type: public_method
+            serialized_name: Include
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getInclude
+                setter: setInclude
+            type: Medidata\RwsPhp\Schema\ODM\Include
+        protocol:
+            expose: true
+            access_type: public_method
+            serialized_name: Protocol
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getProtocol
+                setter: setProtocol
+            type: Medidata\RwsPhp\Schema\ODM\Protocol
+        studyEventDef:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyEventDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getStudyEventDef
+                setter: setStudyEventDef
+            xml_list:
+                inline: true
+                entry_name: StudyEventDef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\StudyEventDef>
+        formDef:
+            expose: true
+            access_type: public_method
+            serialized_name: FormDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getFormDef
+                setter: setFormDef
+            xml_list:
+                inline: true
+                entry_name: FormDef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\FormDef>
+        itemGroupDef:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemGroupDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemGroupDef
+                setter: setItemGroupDef
+            xml_list:
+                inline: true
+                entry_name: ItemGroupDef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemGroupDef>
+        itemDef:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDef
+                setter: setItemDef
+            xml_list:
+                inline: true
+                entry_name: ItemDef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDef>
+        codeList:
+            expose: true
+            access_type: public_method
+            serialized_name: CodeList
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getCodeList
+                setter: setCodeList
+            xml_list:
+                inline: true
+                entry_name: CodeList
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\CodeList>
+        imputationMethod:
+            expose: true
+            access_type: public_method
+            serialized_name: ImputationMethod
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getImputationMethod
+                setter: setImputationMethod
+            xml_list:
+                inline: true
+                entry_name: ImputationMethod
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ImputationMethod>
+        presentation:
+            expose: true
+            access_type: public_method
+            serialized_name: Presentation
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getPresentation
+                setter: setPresentation
+            xml_list:
+                inline: true
+                entry_name: Presentation
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Presentation>
+        conditionDef:
+            expose: true
+            access_type: public_method
+            serialized_name: ConditionDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getConditionDef
+                setter: setConditionDef
+            xml_list:
+                inline: true
+                entry_name: ConditionDef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ConditionDef>
+        methodDef:
+            expose: true
+            access_type: public_method
+            serialized_name: MethodDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getMethodDef
+                setter: setMethodDef
+            xml_list:
+                inline: true
+                entry_name: MethodDef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\MethodDef>

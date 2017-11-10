@@ -1,0 +1,116 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolCodingRequestDefType:
+    properties:
+        codingWorkflowOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingWorkflowOID
+            accessor:
+                getter: getCodingWorkflowOID
+                setter: setCodingWorkflowOID
+            xml_attribute: true
+            type: string
+        codingDictionaryLevelOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingDictionaryLevelOID
+            accessor:
+                getter: getCodingDictionaryLevelOID
+                setter: setCodingDictionaryLevelOID
+            xml_attribute: true
+            type: string
+        codingDictionaryOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingDictionaryOID
+            accessor:
+                getter: getCodingDictionaryOID
+                setter: setCodingDictionaryOID
+            xml_attribute: true
+            type: string
+        codingPriority:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingPriority
+            accessor:
+                getter: getCodingPriority
+                setter: setCodingPriority
+            xml_attribute: true
+            type: string
+        codingLocale:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingLocale
+            accessor:
+                getter: getCodingLocale
+                setter: setCodingLocale
+            xml_attribute: true
+            type: string
+        codingApprovalType:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingApprovalType
+            accessor:
+                getter: getCodingApprovalType
+                setter: setCodingApprovalType
+            xml_attribute: true
+            type: string
+        codingDictionaryVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingDictionaryVersion
+            accessor:
+                getter: getCodingDictionaryVersion
+                setter: setCodingDictionaryVersion
+            xml_attribute: true
+            type: string
+        codingModeType:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingModeType
+            accessor:
+                getter: getCodingModeType
+                setter: setCodingModeType
+            xml_attribute: true
+            type: string
+        dictionaryLevelComponentRef:
+            expose: true
+            access_type: public_method
+            serialized_name: DictionaryLevelComponentRef
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getDictionaryLevelComponentRef
+                setter: setDictionaryLevelComponentRef
+            xml_list:
+                inline: true
+                entry_name: DictionaryLevelComponentRef
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\DictionaryLevelComponentRef>
+        supplementalRef:
+            expose: true
+            access_type: public_method
+            serialized_name: SupplementalRef
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getSupplementalRef
+                setter: setSupplementalRef
+            xml_list:
+                inline: true
+                entry_name: SupplementalRef
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\SupplementalRef>
+        codingWorkflowData:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingWorkflowData
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getCodingWorkflowData
+                setter: setCodingWorkflowData
+            xml_list:
+                inline: true
+                entry_name: CodingWorkflowData
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\CodingWorkflowData>

@@ -1,0 +1,32 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionGlobalVariablesType:
+    properties:
+        studyName:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyName
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getStudyName
+                setter: setStudyName
+            type: Medidata\RwsPhp\Schema\ODM\StudyName
+        studyDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyDescription
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getStudyDescription
+                setter: setStudyDescription
+            type: Medidata\RwsPhp\Schema\ODM\StudyDescription
+        protocolName:
+            expose: true
+            access_type: public_method
+            serialized_name: ProtocolName
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getProtocolName
+                setter: setProtocolName
+            type: Medidata\RwsPhp\Schema\ODM\ProtocolName

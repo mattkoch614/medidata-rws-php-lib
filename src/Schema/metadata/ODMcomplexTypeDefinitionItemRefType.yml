@@ -1,0 +1,83 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionItemRefType:
+    properties:
+        itemOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemOID
+            accessor:
+                getter: getItemOID
+                setter: setItemOID
+            xml_attribute: true
+            type: string
+        keySequence:
+            expose: true
+            access_type: public_method
+            serialized_name: KeySequence
+            accessor:
+                getter: getKeySequence
+                setter: setKeySequence
+            xml_attribute: true
+            type: integer
+        methodOID:
+            expose: true
+            access_type: public_method
+            serialized_name: MethodOID
+            accessor:
+                getter: getMethodOID
+                setter: setMethodOID
+            xml_attribute: true
+            type: string
+        imputationMethodOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ImputationMethodOID
+            accessor:
+                getter: getImputationMethodOID
+                setter: setImputationMethodOID
+            xml_attribute: true
+            type: string
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            accessor:
+                getter: getRole
+                setter: setRole
+            xml_attribute: true
+            type: string
+        roleCodeListOID:
+            expose: true
+            access_type: public_method
+            serialized_name: RoleCodeListOID
+            accessor:
+                getter: getRoleCodeListOID
+                setter: setRoleCodeListOID
+            xml_attribute: true
+            type: string
+        orderNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: OrderNumber
+            accessor:
+                getter: getOrderNumber
+                setter: setOrderNumber
+            xml_attribute: true
+            type: integer
+        mandatory:
+            expose: true
+            access_type: public_method
+            serialized_name: Mandatory
+            accessor:
+                getter: getMandatory
+                setter: setMandatory
+            xml_attribute: true
+            type: string
+        collectionExceptionConditionOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionExceptionConditionOID
+            accessor:
+                getter: getCollectionExceptionConditionOID
+                setter: setCollectionExceptionConditionOID
+            xml_attribute: true
+            type: string

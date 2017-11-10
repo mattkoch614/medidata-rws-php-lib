@@ -1,0 +1,16 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionInclusionCriteriaType:
+    properties:
+        criterion:
+            expose: true
+            access_type: public_method
+            serialized_name: Criterion
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getCriterion
+                setter: setCriterion
+            xml_list:
+                inline: true
+                entry_name: Criterion
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\Criterion>

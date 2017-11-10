@@ -1,0 +1,128 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolQueryType:
+    properties:
+        recipient:
+            expose: true
+            access_type: public_method
+            serialized_name: Recipient
+            accessor:
+                getter: getRecipient
+                setter: setRecipient
+            xml_attribute: true
+            type: string
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_attribute: true
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string
+        queryRepeatKey:
+            expose: true
+            access_type: public_method
+            serialized_name: QueryRepeatKey
+            accessor:
+                getter: getQueryRepeatKey
+                setter: setQueryRepeatKey
+            xml_attribute: true
+            type: float
+        requiresResponse:
+            expose: true
+            access_type: public_method
+            serialized_name: RequiresResponse
+            accessor:
+                getter: getRequiresResponse
+                setter: setRequiresResponse
+            xml_attribute: true
+            type: string
+        response:
+            expose: true
+            access_type: public_method
+            serialized_name: Response
+            accessor:
+                getter: getResponse
+                setter: setResponse
+            xml_attribute: true
+            type: string
+        precedingQueryRepeatKey:
+            expose: true
+            access_type: public_method
+            serialized_name: PrecedingQueryRepeatKey
+            accessor:
+                getter: getPrecedingQueryRepeatKey
+                setter: setPrecedingQueryRepeatKey
+            xml_attribute: true
+            type: float
+        username:
+            expose: true
+            access_type: public_method
+            serialized_name: Username
+            accessor:
+                getter: getUsername
+                setter: setUsername
+            xml_attribute: true
+            type: string
+        dateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTime
+            accessor:
+                getter: getDateTime
+                setter: setDateTime
+            xml_attribute: true
+            type: string
+        cancelURI:
+            expose: true
+            access_type: public_method
+            serialized_name: CancelURI
+            accessor:
+                getter: getCancelURI
+                setter: setCancelURI
+            xml_attribute: true
+            type: string
+        cancelVERB:
+            expose: true
+            access_type: public_method
+            serialized_name: CancelVERB
+            accessor:
+                getter: getCancelVERB
+                setter: setCancelVERB
+            xml_attribute: true
+            type: string
+        uUID:
+            expose: true
+            access_type: public_method
+            serialized_name: UUID
+            accessor:
+                getter: getUUID
+                setter: setUUID
+            xml_attribute: true
+            type: string
+        coderUsername:
+            expose: true
+            access_type: public_method
+            serialized_name: CoderUsername
+            accessor:
+                getter: getCoderUsername
+                setter: setCoderUsername
+            xml_attribute: true
+            type: string
+        codingDictionaryVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingDictionaryVersion
+            accessor:
+                getter: getCodingDictionaryVersion
+                setter: setCodingDictionaryVersion
+            xml_attribute: true
+            type: string

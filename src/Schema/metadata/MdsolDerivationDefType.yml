@@ -1,0 +1,160 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolDerivationDefType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: string
+        bypassDuringMigration:
+            expose: true
+            access_type: public_method
+            serialized_name: BypassDuringMigration
+            accessor:
+                getter: getBypassDuringMigration
+                setter: setBypassDuringMigration
+            xml_attribute: true
+            type: string
+        needsRetesting:
+            expose: true
+            access_type: public_method
+            serialized_name: NeedsRetesting
+            accessor:
+                getter: getNeedsRetesting
+                setter: setNeedsRetesting
+            xml_attribute: true
+            type: string
+        variableOID:
+            expose: true
+            access_type: public_method
+            serialized_name: VariableOID
+            accessor:
+                getter: getVariableOID
+                setter: setVariableOID
+            xml_attribute: true
+            type: string
+        folderOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FolderOID
+            accessor:
+                getter: getFolderOID
+                setter: setFolderOID
+            xml_attribute: true
+            type: string
+        formOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FormOID
+            accessor:
+                getter: getFormOID
+                setter: setFormOID
+            xml_attribute: true
+            type: string
+        fieldOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FieldOID
+            accessor:
+                getter: getFieldOID
+                setter: setFieldOID
+            xml_attribute: true
+            type: string
+        recordPosition:
+            expose: true
+            access_type: public_method
+            serialized_name: RecordPosition
+            accessor:
+                getter: getRecordPosition
+                setter: setRecordPosition
+            xml_attribute: true
+            type: integer
+        allVariablesInFolders:
+            expose: true
+            access_type: public_method
+            serialized_name: AllVariablesInFolders
+            accessor:
+                getter: getAllVariablesInFolders
+                setter: setAllVariablesInFolders
+            xml_attribute: true
+            type: string
+        allVariablesInFields:
+            expose: true
+            access_type: public_method
+            serialized_name: AllVariablesInFields
+            accessor:
+                getter: getAllVariablesInFields
+                setter: setAllVariablesInFields
+            xml_attribute: true
+            type: string
+        logicalRecordPosition:
+            expose: true
+            access_type: public_method
+            serialized_name: LogicalRecordPosition
+            accessor:
+                getter: getLogicalRecordPosition
+                setter: setLogicalRecordPosition
+            xml_attribute: true
+            type: string
+        formRepeatNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: FormRepeatNumber
+            accessor:
+                getter: getFormRepeatNumber
+                setter: setFormRepeatNumber
+            xml_attribute: true
+            type: integer
+        folderRepeatNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: FolderRepeatNumber
+            accessor:
+                getter: getFolderRepeatNumber
+                setter: setFolderRepeatNumber
+            xml_attribute: true
+            type: integer
+        copySource:
+            expose: true
+            access_type: public_method
+            serialized_name: CopySource
+            accessor:
+                getter: getCopySource
+                setter: setCopySource
+            xml_attribute: true
+            type: string
+        retestingReason:
+            expose: true
+            access_type: public_method
+            serialized_name: RetestingReason
+            accessor:
+                getter: getRetestingReason
+                setter: setRetestingReason
+            xml_attribute: true
+            type: string
+        derivationStep:
+            expose: true
+            access_type: public_method
+            serialized_name: DerivationStep
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getDerivationStep
+                setter: setDerivationStep
+            xml_list:
+                inline: true
+                entry_name: DerivationStep
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\DerivationStep>

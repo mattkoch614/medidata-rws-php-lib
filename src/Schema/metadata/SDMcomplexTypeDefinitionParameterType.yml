@@ -1,0 +1,53 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionParameterType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        term:
+            expose: true
+            access_type: public_method
+            serialized_name: Term
+            accessor:
+                getter: getTerm
+                setter: setTerm
+            xml_attribute: true
+            type: string
+        shortName:
+            expose: true
+            access_type: public_method
+            serialized_name: ShortName
+            accessor:
+                getter: getShortName
+                setter: setShortName
+            xml_attribute: true
+            type: string
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: Medidata\RwsPhp\Schema\ODM\Description
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_list:
+                inline: true
+                entry_name: Value
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<string>

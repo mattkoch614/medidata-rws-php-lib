@@ -1,0 +1,20 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolLinkType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        href:
+            expose: true
+            access_type: public_method
+            serialized_name: href
+            accessor:
+                getter: getHref
+                setter: setHref
+            xml_attribute: true
+            type: string

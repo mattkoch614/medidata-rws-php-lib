@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\FlagValue:
+    xml_root_name: FlagValue
+    xml_root_namespace: 'http://www.cdisc.org/ns/odm/v1.3'

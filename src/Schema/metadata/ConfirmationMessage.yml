@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\ConfirmationMessage:
+    xml_root_name: ConfirmationMessage
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'

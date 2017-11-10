@@ -1,0 +1,88 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionSubjectDataType:
+    properties:
+        subjectKey:
+            expose: true
+            access_type: public_method
+            serialized_name: SubjectKey
+            accessor:
+                getter: getSubjectKey
+                setter: setSubjectKey
+            xml_attribute: true
+            type: string
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string
+        auditRecord:
+            expose: true
+            access_type: public_method
+            serialized_name: AuditRecord
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAuditRecord
+                setter: setAuditRecord
+            type: Medidata\RwsPhp\Schema\ODM\AuditRecord
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: Medidata\RwsPhp\Schema\ODM\Signature
+        investigatorRef:
+            expose: true
+            access_type: public_method
+            serialized_name: InvestigatorRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getInvestigatorRef
+                setter: setInvestigatorRef
+            type: Medidata\RwsPhp\Schema\ODM\InvestigatorRef
+        siteRef:
+            expose: true
+            access_type: public_method
+            serialized_name: SiteRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getSiteRef
+                setter: setSiteRef
+            type: Medidata\RwsPhp\Schema\ODM\SiteRef
+        annotation:
+            expose: true
+            access_type: public_method
+            serialized_name: Annotation
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAnnotation
+                setter: setAnnotation
+            xml_list:
+                inline: true
+                entry_name: Annotation
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Annotation>
+        studyEventData:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyEventData
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getStudyEventData
+                setter: setStudyEventData
+            xml_list:
+                inline: true
+                entry_name: StudyEventData
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\StudyEventData>

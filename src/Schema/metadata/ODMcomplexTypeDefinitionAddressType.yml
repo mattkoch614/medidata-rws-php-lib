@@ -1,0 +1,66 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionAddressType:
+    properties:
+        streetName:
+            expose: true
+            access_type: public_method
+            serialized_name: StreetName
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getStreetName
+                setter: setStreetName
+            xml_list:
+                inline: true
+                entry_name: StreetName
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\StreetName>
+        city:
+            expose: true
+            access_type: public_method
+            serialized_name: City
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getCity
+                setter: setCity
+            type: Medidata\RwsPhp\Schema\ODM\City
+        stateProv:
+            expose: true
+            access_type: public_method
+            serialized_name: StateProv
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getStateProv
+                setter: setStateProv
+            type: Medidata\RwsPhp\Schema\ODM\StateProv
+        country:
+            expose: true
+            access_type: public_method
+            serialized_name: Country
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getCountry
+                setter: setCountry
+            type: Medidata\RwsPhp\Schema\ODM\Country
+        postalCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PostalCode
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getPostalCode
+                setter: setPostalCode
+            type: Medidata\RwsPhp\Schema\ODM\PostalCode
+        otherText:
+            expose: true
+            access_type: public_method
+            serialized_name: OtherText
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getOtherText
+                setter: setOtherText
+            type: Medidata\RwsPhp\Schema\ODM\OtherText

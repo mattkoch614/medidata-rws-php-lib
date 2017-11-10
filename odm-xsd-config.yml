@@ -1,0 +1,30 @@
+# config.yml
+# Linux Users: PHP Namespaces use back slash \ rather than a forward slash /
+# So for destinations_php, the namespace would be TestNs\MyApp
+
+xsd2php:
+  namespaces:
+    'http://www.mdsol.com/ns/odm/metadata': 'Medidata\RwsPhp\Schema\ODM\mdsol'
+    'http://www.w3.org/1999/xlink': 'Medidata\RwsPhp\Schema\xlink'
+    'http://www.w3.org/2000/09/xmldsig#': 'Medidata\RwsPhp\Schema\xmldsig'
+    'http://www.cdisc.org/ns/odm/v1.3': 'Medidata\RwsPhp\Schema\ODM'
+    'http://www.cdisc.org/ns/studydesign/v1.0': 'Medidata\RwsPhp\Schema\StudyDesign'
+  destinations_php:
+    'Medidata\RwsPhp\Schema\ODM\mdsol': src/Schema
+    'Medidata\RwsPhp\Schema\xlink': src/Schema
+    'Medidata\RwsPhp\Schema\xmldsig': src/Schema
+    'Medidata\RwsPhp\Schema\ODM': src/Schema
+    'Medidata\RwsPhp\Schema\StudyDesign': src/Schema
+#    'TestNs\MyApp': soap\src  #  on Windows
+  destinations_jms:
+    'Medidata\RwsPhp\Schema\ODM\mdsol': src/Schema/metadata
+    'Medidata\RwsPhp\Schema\xlink': src/Schema/metadata
+    'Medidata\RwsPhp\Schema\xmldsig': src/Schema/metadata
+    'Medidata\RwsPhp\Schema\ODM': src/Schema/metadata
+    'Medidata\RwsPhp\Schema\StudyDesign': src/Schema/metadata
+#    'TestNs\MyApp': soap\metadata  #  on Windows
+#  aliases: # optional
+#    'http://www.example.org/test/':
+#      MyCustomXSDType:  'MyCustomMappedPHPType'
+  naming_strategy: short # optional and default
+  path_generator: psr4 # optional and default

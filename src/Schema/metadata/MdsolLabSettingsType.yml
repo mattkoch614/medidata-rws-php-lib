@@ -1,0 +1,43 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolLabSettingsType:
+    properties:
+        standardUnits:
+            expose: true
+            access_type: public_method
+            serialized_name: StandardUnits
+            accessor:
+                getter: getStandardUnits
+                setter: setStandardUnits
+            xml_attribute: true
+            type: string
+        referenceLabs:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceLabs
+            accessor:
+                getter: getReferenceLabs
+                setter: setReferenceLabs
+            xml_attribute: true
+            type: string
+        alertLabs:
+            expose: true
+            access_type: public_method
+            serialized_name: AlertLabs
+            accessor:
+                getter: getAlertLabs
+                setter: setAlertLabs
+            xml_attribute: true
+            type: string
+        labVariableMapping:
+            expose: true
+            access_type: public_method
+            serialized_name: LabVariableMapping
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getLabVariableMapping
+                setter: setLabVariableMapping
+            xml_list:
+                inline: true
+                entry_name: LabVariableMapping
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\LabVariableMapping>

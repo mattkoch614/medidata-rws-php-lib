@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\PriorCodingDictionaryVersion:
+    xml_root_name: PriorCodingDictionaryVersion
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'

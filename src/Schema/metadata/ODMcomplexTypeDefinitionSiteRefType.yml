@@ -1,0 +1,11 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionSiteRefType:
+    properties:
+        locationOID:
+            expose: true
+            access_type: public_method
+            serialized_name: LocationOID
+            accessor:
+                getter: getLocationOID
+                setter: setLocationOID
+            xml_attribute: true
+            type: string

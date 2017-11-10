@@ -1,0 +1,16 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionAuditRecordsType:
+    properties:
+        auditRecord:
+            expose: true
+            access_type: public_method
+            serialized_name: AuditRecord
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAuditRecord
+                setter: setAuditRecord
+            xml_list:
+                inline: true
+                entry_name: AuditRecord
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\AuditRecord>

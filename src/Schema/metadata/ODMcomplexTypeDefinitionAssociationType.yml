@@ -1,0 +1,40 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionAssociationType:
+    properties:
+        studyOID:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyOID
+            accessor:
+                getter: getStudyOID
+                setter: setStudyOID
+            xml_attribute: true
+            type: string
+        metaDataVersionOID:
+            expose: true
+            access_type: public_method
+            serialized_name: MetaDataVersionOID
+            accessor:
+                getter: getMetaDataVersionOID
+                setter: setMetaDataVersionOID
+            xml_attribute: true
+            type: string
+        keySet:
+            expose: true
+            access_type: public_method
+            serialized_name: KeySet
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getKeySet
+                setter: setKeySet
+            type: Medidata\RwsPhp\Schema\ODM\KeySet
+        annotation:
+            expose: true
+            access_type: public_method
+            serialized_name: Annotation
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAnnotation
+                setter: setAnnotation
+            type: Medidata\RwsPhp\Schema\ODM\Annotation

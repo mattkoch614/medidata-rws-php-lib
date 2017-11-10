@@ -1,0 +1,20 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionSegmentRefType:
+    properties:
+        segmentOID:
+            expose: true
+            access_type: public_method
+            serialized_name: SegmentOID
+            accessor:
+                getter: getSegmentOID
+                setter: setSegmentOID
+            xml_attribute: true
+            type: string
+        orderNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: OrderNumber
+            accessor:
+                getter: getOrderNumber
+                setter: setOrderNumber
+            xml_attribute: true
+            type: integer

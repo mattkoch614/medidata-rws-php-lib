@@ -1,0 +1,11 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolSupplementalRefType:
+    properties:
+        itemRef:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemRef
+            accessor:
+                getter: getItemRef
+                setter: setItemRef
+            xml_attribute: true
+            type: string

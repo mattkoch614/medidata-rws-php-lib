@@ -1,0 +1,58 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionTimingType:
+    properties:
+        absoluteTimingConstraint:
+            expose: true
+            access_type: public_method
+            serialized_name: AbsoluteTimingConstraint
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getAbsoluteTimingConstraint
+                setter: setAbsoluteTimingConstraint
+            xml_list:
+                inline: true
+                entry_name: AbsoluteTimingConstraint
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\AbsoluteTimingConstraint>
+        relativeTimingConstraint:
+            expose: true
+            access_type: public_method
+            serialized_name: RelativeTimingConstraint
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getRelativeTimingConstraint
+                setter: setRelativeTimingConstraint
+            xml_list:
+                inline: true
+                entry_name: RelativeTimingConstraint
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\RelativeTimingConstraint>
+        transitionTimingConstraint:
+            expose: true
+            access_type: public_method
+            serialized_name: TransitionTimingConstraint
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getTransitionTimingConstraint
+                setter: setTransitionTimingConstraint
+            xml_list:
+                inline: true
+                entry_name: TransitionTimingConstraint
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\TransitionTimingConstraint>
+        activityDuration:
+            expose: true
+            access_type: public_method
+            serialized_name: ActivityDuration
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getActivityDuration
+                setter: setActivityDuration
+            xml_list:
+                inline: true
+                entry_name: ActivityDuration
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\ActivityDuration>

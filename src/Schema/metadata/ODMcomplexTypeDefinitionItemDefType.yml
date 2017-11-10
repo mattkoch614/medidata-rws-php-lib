@@ -1,0 +1,179 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionItemDefType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        dataType:
+            expose: true
+            access_type: public_method
+            serialized_name: DataType
+            accessor:
+                getter: getDataType
+                setter: setDataType
+            xml_attribute: true
+            type: string
+        length:
+            expose: true
+            access_type: public_method
+            serialized_name: Length
+            accessor:
+                getter: getLength
+                setter: setLength
+            xml_attribute: true
+            type: integer
+        significantDigits:
+            expose: true
+            access_type: public_method
+            serialized_name: SignificantDigits
+            accessor:
+                getter: getSignificantDigits
+                setter: setSignificantDigits
+            xml_attribute: true
+            type: integer
+        sASFieldName:
+            expose: true
+            access_type: public_method
+            serialized_name: SASFieldName
+            accessor:
+                getter: getSASFieldName
+                setter: setSASFieldName
+            xml_attribute: true
+            type: string
+        sDSVarName:
+            expose: true
+            access_type: public_method
+            serialized_name: SDSVarName
+            accessor:
+                getter: getSDSVarName
+                setter: setSDSVarName
+            xml_attribute: true
+            type: string
+        origin:
+            expose: true
+            access_type: public_method
+            serialized_name: Origin
+            accessor:
+                getter: getOrigin
+                setter: setOrigin
+            xml_attribute: true
+            type: string
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            accessor:
+                getter: getComment
+                setter: setComment
+            xml_attribute: true
+            type: string
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: Medidata\RwsPhp\Schema\ODM\Description
+        question:
+            expose: true
+            access_type: public_method
+            serialized_name: Question
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getQuestion
+                setter: setQuestion
+            type: Medidata\RwsPhp\Schema\ODM\Question
+        externalQuestion:
+            expose: true
+            access_type: public_method
+            serialized_name: ExternalQuestion
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getExternalQuestion
+                setter: setExternalQuestion
+            type: Medidata\RwsPhp\Schema\ODM\ExternalQuestion
+        measurementUnitRef:
+            expose: true
+            access_type: public_method
+            serialized_name: MeasurementUnitRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getMeasurementUnitRef
+                setter: setMeasurementUnitRef
+            xml_list:
+                inline: true
+                entry_name: MeasurementUnitRef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\MeasurementUnitRef>
+        rangeCheck:
+            expose: true
+            access_type: public_method
+            serialized_name: RangeCheck
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getRangeCheck
+                setter: setRangeCheck
+            xml_list:
+                inline: true
+                entry_name: RangeCheck
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\RangeCheck>
+        codeListRef:
+            expose: true
+            access_type: public_method
+            serialized_name: CodeListRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getCodeListRef
+                setter: setCodeListRef
+            type: Medidata\RwsPhp\Schema\ODM\CodeListRef
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getRole
+                setter: setRole
+            xml_list:
+                inline: true
+                entry_name: Role
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Role>
+        alias:
+            expose: true
+            access_type: public_method
+            serialized_name: Alias
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAlias
+                setter: setAlias
+            xml_list:
+                inline: true
+                entry_name: Alias
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Alias>

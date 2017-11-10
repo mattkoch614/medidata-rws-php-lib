@@ -1,0 +1,53 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionAnnotationType:
+    properties:
+        seqNum:
+            expose: true
+            access_type: public_method
+            serialized_name: SeqNum
+            accessor:
+                getter: getSeqNum
+                setter: setSeqNum
+            xml_attribute: true
+            type: integer
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string
+        iD:
+            expose: true
+            access_type: public_method
+            serialized_name: ID
+            accessor:
+                getter: getID
+                setter: setID
+            xml_attribute: true
+            type: string
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: Medidata\RwsPhp\Schema\ODM\Comment
+        flag:
+            expose: true
+            access_type: public_method
+            serialized_name: Flag
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getFlag
+                setter: setFlag
+            xml_list:
+                inline: true
+                entry_name: Flag
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Flag>

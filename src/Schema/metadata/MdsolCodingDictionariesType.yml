@@ -1,0 +1,16 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolCodingDictionariesType:
+    properties:
+        codingDictionaryDef:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingDictionaryDef
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getCodingDictionaryDef
+                setter: setCodingDictionaryDef
+            xml_list:
+                inline: true
+                entry_name: CodingDictionaryDef
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\CodingDictionaryDef>

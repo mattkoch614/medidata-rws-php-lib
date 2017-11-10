@@ -1,0 +1,38 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionFormRefType:
+    properties:
+        formOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FormOID
+            accessor:
+                getter: getFormOID
+                setter: setFormOID
+            xml_attribute: true
+            type: string
+        orderNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: OrderNumber
+            accessor:
+                getter: getOrderNumber
+                setter: setOrderNumber
+            xml_attribute: true
+            type: integer
+        mandatory:
+            expose: true
+            access_type: public_method
+            serialized_name: Mandatory
+            accessor:
+                getter: getMandatory
+                setter: setMandatory
+            xml_attribute: true
+            type: string
+        collectionExceptionConditionOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionExceptionConditionOID
+            accessor:
+                getter: getCollectionExceptionConditionOID
+                setter: setCollectionExceptionConditionOID
+            xml_attribute: true
+            type: string

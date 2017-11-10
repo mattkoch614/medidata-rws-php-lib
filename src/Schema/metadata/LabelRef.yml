@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\LabelRef:
+    xml_root_name: LabelRef
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'

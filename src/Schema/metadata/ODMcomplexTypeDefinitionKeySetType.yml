@@ -1,0 +1,92 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionKeySetType:
+    properties:
+        studyOID:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyOID
+            accessor:
+                getter: getStudyOID
+                setter: setStudyOID
+            xml_attribute: true
+            type: string
+        subjectKey:
+            expose: true
+            access_type: public_method
+            serialized_name: SubjectKey
+            accessor:
+                getter: getSubjectKey
+                setter: setSubjectKey
+            xml_attribute: true
+            type: string
+        studyEventOID:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyEventOID
+            accessor:
+                getter: getStudyEventOID
+                setter: setStudyEventOID
+            xml_attribute: true
+            type: string
+        studyEventRepeatKey:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyEventRepeatKey
+            accessor:
+                getter: getStudyEventRepeatKey
+                setter: setStudyEventRepeatKey
+            xml_attribute: true
+            type: string
+        formOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FormOID
+            accessor:
+                getter: getFormOID
+                setter: setFormOID
+            xml_attribute: true
+            type: string
+        formRepeatKey:
+            expose: true
+            access_type: public_method
+            serialized_name: FormRepeatKey
+            accessor:
+                getter: getFormRepeatKey
+                setter: setFormRepeatKey
+            xml_attribute: true
+            type: string
+        itemGroupOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemGroupOID
+            accessor:
+                getter: getItemGroupOID
+                setter: setItemGroupOID
+            xml_attribute: true
+            type: string
+        itemGroupRepeatKey:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemGroupRepeatKey
+            accessor:
+                getter: getItemGroupRepeatKey
+                setter: setItemGroupRepeatKey
+            xml_attribute: true
+            type: string
+        itemOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemOID
+            accessor:
+                getter: getItemOID
+                setter: setItemOID
+            xml_attribute: true
+            type: string
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string

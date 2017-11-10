@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\RangeType:
+    xml_root_name: RangeType
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'

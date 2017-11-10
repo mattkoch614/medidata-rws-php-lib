@@ -1,0 +1,11 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionMeasurementUnitRefType:
+    properties:
+        measurementUnitOID:
+            expose: true
+            access_type: public_method
+            serialized_name: MeasurementUnitOID
+            accessor:
+                getter: getMeasurementUnitOID
+                setter: setMeasurementUnitOID
+            xml_attribute: true
+            type: string

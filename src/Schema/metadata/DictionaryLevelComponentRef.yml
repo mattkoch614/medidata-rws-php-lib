@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\DictionaryLevelComponentRef:
+    xml_root_name: DictionaryLevelComponentRef
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'

@@ -1,0 +1,61 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionSignatureType:
+    properties:
+        iD:
+            expose: true
+            access_type: public_method
+            serialized_name: ID
+            accessor:
+                getter: getID
+                setter: setID
+            xml_attribute: true
+            type: string
+        userRef:
+            expose: true
+            access_type: public_method
+            serialized_name: UserRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getUserRef
+                setter: setUserRef
+            type: Medidata\RwsPhp\Schema\ODM\UserRef
+        locationRef:
+            expose: true
+            access_type: public_method
+            serialized_name: LocationRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getLocationRef
+                setter: setLocationRef
+            type: Medidata\RwsPhp\Schema\ODM\LocationRef
+        signatureRef:
+            expose: true
+            access_type: public_method
+            serialized_name: SignatureRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getSignatureRef
+                setter: setSignatureRef
+            type: Medidata\RwsPhp\Schema\ODM\SignatureRef
+        dateTimeStamp:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTimeStamp
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getDateTimeStamp
+                setter: setDateTimeStamp
+            type: Medidata\RwsPhp\Schema\ODM\DateTimeStamp
+        cryptoBindingManifest:
+            expose: true
+            access_type: public_method
+            serialized_name: CryptoBindingManifest
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getCryptoBindingManifest
+                setter: setCryptoBindingManifest
+            type: Medidata\RwsPhp\Schema\ODM\CryptoBindingManifest

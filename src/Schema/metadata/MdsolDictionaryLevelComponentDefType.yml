@@ -1,0 +1,11 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolDictionaryLevelComponentDefType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string

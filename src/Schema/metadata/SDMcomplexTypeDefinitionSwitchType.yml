@@ -1,0 +1,26 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionSwitchType:
+    properties:
+        transitionDestination:
+            expose: true
+            access_type: public_method
+            serialized_name: TransitionDestination
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getTransitionDestination
+                setter: setTransitionDestination
+            xml_list:
+                inline: true
+                entry_name: TransitionDestination
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\TransitionDestination>
+        transitionDefault:
+            expose: true
+            access_type: public_method
+            serialized_name: TransitionDefault
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getTransitionDefault
+                setter: setTransitionDefault
+            type: Medidata\RwsPhp\Schema\StudyDesign\TransitionDefault

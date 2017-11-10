@@ -1,0 +1,385 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionItemGroupDataType:
+    properties:
+        itemGroupOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemGroupOID
+            accessor:
+                getter: getItemGroupOID
+                setter: setItemGroupOID
+            xml_attribute: true
+            type: string
+        itemGroupRepeatKey:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemGroupRepeatKey
+            accessor:
+                getter: getItemGroupRepeatKey
+                setter: setItemGroupRepeatKey
+            xml_attribute: true
+            type: string
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string
+        auditRecord:
+            expose: true
+            access_type: public_method
+            serialized_name: AuditRecord
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAuditRecord
+                setter: setAuditRecord
+            type: Medidata\RwsPhp\Schema\ODM\AuditRecord
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: Medidata\RwsPhp\Schema\ODM\Signature
+        annotation:
+            expose: true
+            access_type: public_method
+            serialized_name: Annotation
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAnnotation
+                setter: setAnnotation
+            xml_list:
+                inline: true
+                entry_name: Annotation
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Annotation>
+        itemData:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemData
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemData
+                setter: setItemData
+            xml_list:
+                inline: true
+                entry_name: ItemData
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemData>
+        itemDataURI:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataURI
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataURI
+                setter: setItemDataURI
+            xml_list:
+                inline: true
+                entry_name: ItemDataURI
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataURI>
+        itemDataAny:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataAny
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataAny
+                setter: setItemDataAny
+            xml_list:
+                inline: true
+                entry_name: ItemDataAny
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataAny>
+        itemDataBoolean:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataBoolean
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataBoolean
+                setter: setItemDataBoolean
+            xml_list:
+                inline: true
+                entry_name: ItemDataBoolean
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataBoolean>
+        itemDataString:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataString
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataString
+                setter: setItemDataString
+            xml_list:
+                inline: true
+                entry_name: ItemDataString
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataString>
+        itemDataInteger:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataInteger
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataInteger
+                setter: setItemDataInteger
+            xml_list:
+                inline: true
+                entry_name: ItemDataInteger
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataInteger>
+        itemDataFloat:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataFloat
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataFloat
+                setter: setItemDataFloat
+            xml_list:
+                inline: true
+                entry_name: ItemDataFloat
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataFloat>
+        itemDataDouble:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataDouble
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataDouble
+                setter: setItemDataDouble
+            xml_list:
+                inline: true
+                entry_name: ItemDataDouble
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataDouble>
+        itemDataDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataDate
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataDate
+                setter: setItemDataDate
+            xml_list:
+                inline: true
+                entry_name: ItemDataDate
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataDate>
+        itemDataTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataTime
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataTime
+                setter: setItemDataTime
+            xml_list:
+                inline: true
+                entry_name: ItemDataTime
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataTime>
+        itemDataDatetime:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataDatetime
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataDatetime
+                setter: setItemDataDatetime
+            xml_list:
+                inline: true
+                entry_name: ItemDataDatetime
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataDatetime>
+        itemDataHexBinary:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataHexBinary
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataHexBinary
+                setter: setItemDataHexBinary
+            xml_list:
+                inline: true
+                entry_name: ItemDataHexBinary
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataHexBinary>
+        itemDataBase64Binary:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataBase64Binary
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataBase64Binary
+                setter: setItemDataBase64Binary
+            xml_list:
+                inline: true
+                entry_name: ItemDataBase64Binary
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataBase64Binary>
+        itemDataHexFloat:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataHexFloat
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataHexFloat
+                setter: setItemDataHexFloat
+            xml_list:
+                inline: true
+                entry_name: ItemDataHexFloat
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataHexFloat>
+        itemDataBase64Float:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataBase64Float
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataBase64Float
+                setter: setItemDataBase64Float
+            xml_list:
+                inline: true
+                entry_name: ItemDataBase64Float
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataBase64Float>
+        itemDataPartialDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataPartialDate
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataPartialDate
+                setter: setItemDataPartialDate
+            xml_list:
+                inline: true
+                entry_name: ItemDataPartialDate
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataPartialDate>
+        itemDataPartialTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataPartialTime
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataPartialTime
+                setter: setItemDataPartialTime
+            xml_list:
+                inline: true
+                entry_name: ItemDataPartialTime
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataPartialTime>
+        itemDataPartialDatetime:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataPartialDatetime
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataPartialDatetime
+                setter: setItemDataPartialDatetime
+            xml_list:
+                inline: true
+                entry_name: ItemDataPartialDatetime
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataPartialDatetime>
+        itemDataDurationDatetime:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataDurationDatetime
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataDurationDatetime
+                setter: setItemDataDurationDatetime
+            xml_list:
+                inline: true
+                entry_name: ItemDataDurationDatetime
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataDurationDatetime>
+        itemDataIntervalDatetime:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataIntervalDatetime
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataIntervalDatetime
+                setter: setItemDataIntervalDatetime
+            xml_list:
+                inline: true
+                entry_name: ItemDataIntervalDatetime
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataIntervalDatetime>
+        itemDataIncompleteDatetime:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataIncompleteDatetime
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataIncompleteDatetime
+                setter: setItemDataIncompleteDatetime
+            xml_list:
+                inline: true
+                entry_name: ItemDataIncompleteDatetime
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataIncompleteDatetime>
+        itemDataIncompleteDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataIncompleteDate
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataIncompleteDate
+                setter: setItemDataIncompleteDate
+            xml_list:
+                inline: true
+                entry_name: ItemDataIncompleteDate
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataIncompleteDate>
+        itemDataIncompleteTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemDataIncompleteTime
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemDataIncompleteTime
+                setter: setItemDataIncompleteTime
+            xml_list:
+                inline: true
+                entry_name: ItemDataIncompleteTime
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemDataIncompleteTime>

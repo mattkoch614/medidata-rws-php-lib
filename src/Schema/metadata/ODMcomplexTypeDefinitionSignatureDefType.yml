@@ -1,0 +1,40 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionSignatureDefType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        methodology:
+            expose: true
+            access_type: public_method
+            serialized_name: Methodology
+            accessor:
+                getter: getMethodology
+                setter: setMethodology
+            xml_attribute: true
+            type: string
+        meaning:
+            expose: true
+            access_type: public_method
+            serialized_name: Meaning
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getMeaning
+                setter: setMeaning
+            type: Medidata\RwsPhp\Schema\ODM\Meaning
+        legalReason:
+            expose: true
+            access_type: public_method
+            serialized_name: LegalReason
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getLegalReason
+                setter: setLegalReason
+            type: Medidata\RwsPhp\Schema\ODM\LegalReason

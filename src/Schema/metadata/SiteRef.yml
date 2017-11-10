@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\SiteRef:
+    xml_root_name: SiteRef
+    xml_root_namespace: 'http://www.cdisc.org/ns/odm/v1.3'

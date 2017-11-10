@@ -1,0 +1,66 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionActivityDurationType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        activityOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ActivityOID
+            accessor:
+                getter: getActivityOID
+                setter: setActivityOID
+            xml_attribute: true
+            type: string
+        plannedDuration:
+            expose: true
+            access_type: public_method
+            serialized_name: PlannedDuration
+            accessor:
+                getter: getPlannedDuration
+                setter: setPlannedDuration
+            xml_attribute: true
+            type: string
+        plannedDurationPreWindow:
+            expose: true
+            access_type: public_method
+            serialized_name: PlannedDurationPreWindow
+            accessor:
+                getter: getPlannedDurationPreWindow
+                setter: setPlannedDurationPreWindow
+            xml_attribute: true
+            type: string
+        plannedDurationPostWindow:
+            expose: true
+            access_type: public_method
+            serialized_name: PlannedDurationPostWindow
+            accessor:
+                getter: getPlannedDurationPostWindow
+                setter: setPlannedDurationPostWindow
+            xml_attribute: true
+            type: string
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: Medidata\RwsPhp\Schema\ODM\Description

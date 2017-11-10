@@ -1,0 +1,43 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionLocationType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        locationType:
+            expose: true
+            access_type: public_method
+            serialized_name: LocationType
+            accessor:
+                getter: getLocationType
+                setter: setLocationType
+            xml_attribute: true
+            type: string
+        metaDataVersionRef:
+            expose: true
+            access_type: public_method
+            serialized_name: MetaDataVersionRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getMetaDataVersionRef
+                setter: setMetaDataVersionRef
+            xml_list:
+                inline: true
+                entry_name: MetaDataVersionRef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\MetaDataVersionRef>

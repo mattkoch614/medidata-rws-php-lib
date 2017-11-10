@@ -1,0 +1,22 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolPartialClinicalDataType:
+    properties:
+        codingData:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingData
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getCodingData
+                setter: setCodingData
+            type: Medidata\RwsPhp\Schema\ODM\mdsol\CodingData
+        query:
+            expose: true
+            access_type: public_method
+            serialized_name: Query
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getQuery
+                setter: setQuery
+            type: Medidata\RwsPhp\Schema\ODM\mdsol\Query

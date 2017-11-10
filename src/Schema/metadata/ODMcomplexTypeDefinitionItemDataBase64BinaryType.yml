@@ -1,0 +1,64 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionItemDataBase64BinaryType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: \AnySimpleType
+        itemOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemOID
+            accessor:
+                getter: getItemOID
+                setter: setItemOID
+            xml_attribute: true
+            type: string
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string
+        auditRecordID:
+            expose: true
+            access_type: public_method
+            serialized_name: AuditRecordID
+            accessor:
+                getter: getAuditRecordID
+                setter: setAuditRecordID
+            xml_attribute: true
+            type: string
+        signatureID:
+            expose: true
+            access_type: public_method
+            serialized_name: SignatureID
+            accessor:
+                getter: getSignatureID
+                setter: setSignatureID
+            xml_attribute: true
+            type: string
+        annotationID:
+            expose: true
+            access_type: public_method
+            serialized_name: AnnotationID
+            accessor:
+                getter: getAnnotationID
+                setter: setAnnotationID
+            xml_attribute: true
+            type: string
+        measurementUnitOID:
+            expose: true
+            access_type: public_method
+            serialized_name: MeasurementUnitOID
+            accessor:
+                getter: getMeasurementUnitOID
+                setter: setMeasurementUnitOID
+            xml_attribute: true
+            type: string

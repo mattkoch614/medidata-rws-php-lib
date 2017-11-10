@@ -1,0 +1,43 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolStudyPeriodDefType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        periodType:
+            expose: true
+            access_type: public_method
+            serialized_name: PeriodType
+            accessor:
+                getter: getPeriodType
+                setter: setPeriodType
+            xml_attribute: true
+            type: string
+        studyEventRef:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyEventRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getStudyEventRef
+                setter: setStudyEventRef
+            xml_list:
+                inline: true
+                entry_name: StudyEventRef
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\StudyEventRef>

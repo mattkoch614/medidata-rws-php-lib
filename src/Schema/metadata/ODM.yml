@@ -1,0 +1,205 @@
+Medidata\RwsPhp\Schema\ODM\ODM:
+    xml_root_name: ODM
+    xml_root_namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+    properties:
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_attribute: true
+            type: string
+        fileType:
+            expose: true
+            access_type: public_method
+            serialized_name: FileType
+            accessor:
+                getter: getFileType
+                setter: setFileType
+            xml_attribute: true
+            type: string
+        granularity:
+            expose: true
+            access_type: public_method
+            serialized_name: Granularity
+            accessor:
+                getter: getGranularity
+                setter: setGranularity
+            xml_attribute: true
+            type: string
+        archival:
+            expose: true
+            access_type: public_method
+            serialized_name: Archival
+            accessor:
+                getter: getArchival
+                setter: setArchival
+            xml_attribute: true
+            type: string
+        fileOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FileOID
+            accessor:
+                getter: getFileOID
+                setter: setFileOID
+            xml_attribute: true
+            type: string
+        creationDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDateTime
+            accessor:
+                getter: getCreationDateTime
+                setter: setCreationDateTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        priorFileOID:
+            expose: true
+            access_type: public_method
+            serialized_name: PriorFileOID
+            accessor:
+                getter: getPriorFileOID
+                setter: setPriorFileOID
+            xml_attribute: true
+            type: string
+        asOfDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: AsOfDateTime
+            accessor:
+                getter: getAsOfDateTime
+                setter: setAsOfDateTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        oDMVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: ODMVersion
+            accessor:
+                getter: getODMVersion
+                setter: setODMVersion
+            xml_attribute: true
+            type: string
+        originator:
+            expose: true
+            access_type: public_method
+            serialized_name: Originator
+            accessor:
+                getter: getOriginator
+                setter: setOriginator
+            xml_attribute: true
+            type: string
+        sourceSystem:
+            expose: true
+            access_type: public_method
+            serialized_name: SourceSystem
+            accessor:
+                getter: getSourceSystem
+                setter: setSourceSystem
+            xml_attribute: true
+            type: string
+        sourceSystemVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: SourceSystemVersion
+            accessor:
+                getter: getSourceSystemVersion
+                setter: setSourceSystemVersion
+            xml_attribute: true
+            type: string
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        study:
+            expose: true
+            access_type: public_method
+            serialized_name: Study
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getStudy
+                setter: setStudy
+            xml_list:
+                inline: true
+                entry_name: Study
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Study>
+        adminData:
+            expose: true
+            access_type: public_method
+            serialized_name: AdminData
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAdminData
+                setter: setAdminData
+            xml_list:
+                inline: true
+                entry_name: AdminData
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\AdminData>
+        referenceData:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceData
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getReferenceData
+                setter: setReferenceData
+            xml_list:
+                inline: true
+                entry_name: ReferenceData
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ReferenceData>
+        clinicalData:
+            expose: true
+            access_type: public_method
+            serialized_name: ClinicalData
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getClinicalData
+                setter: setClinicalData
+            xml_list:
+                inline: true
+                entry_name: ClinicalData
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ClinicalData>
+        association:
+            expose: true
+            access_type: public_method
+            serialized_name: Association
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAssociation
+                setter: setAssociation
+            xml_list:
+                inline: true
+                entry_name: Association
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Association>
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                namespace: 'http://www.w3.org/2000/09/xmldsig#'
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            xml_list:
+                inline: true
+                entry_name: Signature
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\xmldsig\Signature>

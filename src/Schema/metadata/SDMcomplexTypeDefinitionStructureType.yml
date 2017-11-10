@@ -1,0 +1,72 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionStructureType:
+    properties:
+        epoch:
+            expose: true
+            access_type: public_method
+            serialized_name: Epoch
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getEpoch
+                setter: setEpoch
+            xml_list:
+                inline: true
+                entry_name: Epoch
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\Epoch>
+        arm:
+            expose: true
+            access_type: public_method
+            serialized_name: Arm
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getArm
+                setter: setArm
+            xml_list:
+                inline: true
+                entry_name: Arm
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\Arm>
+        cellDef:
+            expose: true
+            access_type: public_method
+            serialized_name: CellDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getCellDef
+                setter: setCellDef
+            xml_list:
+                inline: true
+                entry_name: CellDef
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\CellDef>
+        segmentDef:
+            expose: true
+            access_type: public_method
+            serialized_name: SegmentDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getSegmentDef
+                setter: setSegmentDef
+            xml_list:
+                inline: true
+                entry_name: SegmentDef
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\SegmentDef>
+        activityDef:
+            expose: true
+            access_type: public_method
+            serialized_name: ActivityDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getActivityDef
+                setter: setActivityDef
+            xml_list:
+                inline: true
+                entry_name: ActivityDef
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\ActivityDef>

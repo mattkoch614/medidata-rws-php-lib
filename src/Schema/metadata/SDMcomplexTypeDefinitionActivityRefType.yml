@@ -1,0 +1,20 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionActivityRefType:
+    properties:
+        activityOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ActivityOID
+            accessor:
+                getter: getActivityOID
+                setter: setActivityOID
+            xml_attribute: true
+            type: string
+        orderNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: OrderNumber
+            accessor:
+                getter: getOrderNumber
+                setter: setOrderNumber
+            xml_attribute: true
+            type: integer

@@ -1,0 +1,110 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolCheckStepType:
+    properties:
+        variableOID:
+            expose: true
+            access_type: public_method
+            serialized_name: VariableOID
+            accessor:
+                getter: getVariableOID
+                setter: setVariableOID
+            xml_attribute: true
+            type: string
+        dataFormat:
+            expose: true
+            access_type: public_method
+            serialized_name: DataFormat
+            accessor:
+                getter: getDataFormat
+                setter: setDataFormat
+            xml_attribute: true
+            type: string
+        folderOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FolderOID
+            accessor:
+                getter: getFolderOID
+                setter: setFolderOID
+            xml_attribute: true
+            type: string
+        formOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FormOID
+            accessor:
+                getter: getFormOID
+                setter: setFormOID
+            xml_attribute: true
+            type: string
+        fieldOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FieldOID
+            accessor:
+                getter: getFieldOID
+                setter: setFieldOID
+            xml_attribute: true
+            type: string
+        staticValue:
+            expose: true
+            access_type: public_method
+            serialized_name: StaticValue
+            accessor:
+                getter: getStaticValue
+                setter: setStaticValue
+            xml_attribute: true
+            type: string
+        function:
+            expose: true
+            access_type: public_method
+            serialized_name: Function
+            accessor:
+                getter: getFunction
+                setter: setFunction
+            xml_attribute: true
+            type: string
+        customFunction:
+            expose: true
+            access_type: public_method
+            serialized_name: CustomFunction
+            accessor:
+                getter: getCustomFunction
+                setter: setCustomFunction
+            xml_attribute: true
+            type: string
+        recordPosition:
+            expose: true
+            access_type: public_method
+            serialized_name: RecordPosition
+            accessor:
+                getter: getRecordPosition
+                setter: setRecordPosition
+            xml_attribute: true
+            type: integer
+        logicalRecordPosition:
+            expose: true
+            access_type: public_method
+            serialized_name: LogicalRecordPosition
+            accessor:
+                getter: getLogicalRecordPosition
+                setter: setLogicalRecordPosition
+            xml_attribute: true
+            type: string
+        formRepeatNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: FormRepeatNumber
+            accessor:
+                getter: getFormRepeatNumber
+                setter: setFormRepeatNumber
+            xml_attribute: true
+            type: integer
+        folderRepeatNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: FolderRepeatNumber
+            accessor:
+                getter: getFolderRepeatNumber
+                setter: setFolderRepeatNumber
+            xml_attribute: true
+            type: integer

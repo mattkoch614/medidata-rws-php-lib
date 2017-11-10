@@ -1,0 +1,47 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolLabVariableMappingType:
+    properties:
+        labVariable:
+            expose: true
+            access_type: public_method
+            serialized_name: LabVariable
+            accessor:
+                getter: getLabVariable
+                setter: setLabVariable
+            xml_attribute: true
+            type: string
+        studyEventOID:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyEventOID
+            accessor:
+                getter: getStudyEventOID
+                setter: setStudyEventOID
+            xml_attribute: true
+            type: string
+        formOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FormOID
+            accessor:
+                getter: getFormOID
+                setter: setFormOID
+            xml_attribute: true
+            type: string
+        itemOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemOID
+            accessor:
+                getter: getItemOID
+                setter: setItemOID
+            xml_attribute: true
+            type: string
+        rangeLocation:
+            expose: true
+            access_type: public_method
+            serialized_name: RangeLocation
+            accessor:
+                getter: getRangeLocation
+                setter: setRangeLocation
+            xml_attribute: true
+            type: string

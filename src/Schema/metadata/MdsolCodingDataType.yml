@@ -1,0 +1,70 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolCodingDataType:
+    properties:
+        codingDictionaryOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingDictionaryOID
+            accessor:
+                getter: getCodingDictionaryOID
+                setter: setCodingDictionaryOID
+            xml_attribute: true
+            type: string
+        codingDictionaryVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingDictionaryVersion
+            accessor:
+                getter: getCodingDictionaryVersion
+                setter: setCodingDictionaryVersion
+            xml_attribute: true
+            type: string
+        coderUsername:
+            expose: true
+            access_type: public_method
+            serialized_name: CoderUsername
+            accessor:
+                getter: getCoderUsername
+                setter: setCoderUsername
+            xml_attribute: true
+            type: string
+        dateTimeStamp:
+            expose: true
+            access_type: public_method
+            serialized_name: DateTimeStamp
+            accessor:
+                getter: getDateTimeStamp
+                setter: setDateTimeStamp
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string
+        codingMode:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingMode
+            accessor:
+                getter: getCodingMode
+                setter: setCodingMode
+            xml_attribute: true
+            type: string
+        dictionaryLevelData:
+            expose: true
+            access_type: public_method
+            serialized_name: DictionaryLevelData
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getDictionaryLevelData
+                setter: setDictionaryLevelData
+            xml_list:
+                inline: true
+                entry_name: DictionaryLevelData
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\DictionaryLevelData>

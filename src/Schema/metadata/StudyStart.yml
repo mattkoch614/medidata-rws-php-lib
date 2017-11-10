@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\StudyDesign\StudyStart:
+    xml_root_name: StudyStart
+    xml_root_namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'

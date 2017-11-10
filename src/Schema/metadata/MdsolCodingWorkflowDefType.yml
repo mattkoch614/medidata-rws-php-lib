@@ -1,0 +1,25 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolCodingWorkflowDefType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        codingWorkflowData:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingWorkflowData
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getCodingWorkflowData
+                setter: setCodingWorkflowData
+            xml_list:
+                inline: true
+                entry_name: CodingWorkflowData
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\CodingWorkflowData>

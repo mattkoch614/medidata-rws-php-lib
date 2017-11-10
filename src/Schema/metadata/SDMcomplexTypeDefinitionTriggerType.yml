@@ -1,0 +1,67 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionTriggerType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        conditionOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ConditionOID
+            accessor:
+                getter: getConditionOID
+                setter: setConditionOID
+            xml_attribute: true
+            type: string
+        structuralElementType:
+            expose: true
+            access_type: public_method
+            serialized_name: StructuralElementType
+            accessor:
+                getter: getStructuralElementType
+                setter: setStructuralElementType
+            xml_attribute: true
+            type: string
+        structuralElementOID:
+            expose: true
+            access_type: public_method
+            serialized_name: StructuralElementOID
+            accessor:
+                getter: getStructuralElementOID
+                setter: setStructuralElementOID
+            xml_attribute: true
+            type: string
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: Medidata\RwsPhp\Schema\ODM\Description
+        switch:
+            expose: true
+            access_type: public_method
+            serialized_name: Switch
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getSwitch
+                setter: setSwitch
+            type: Medidata\RwsPhp\Schema\StudyDesign\Switch

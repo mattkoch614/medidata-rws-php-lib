@@ -1,0 +1,11 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionArmRefType:
+    properties:
+        armOID:
+            expose: true
+            access_type: public_method
+            serialized_name: ArmOID
+            accessor:
+                getter: getArmOID
+                setter: setArmOID
+            xml_attribute: true
+            type: string

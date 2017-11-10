@@ -1,0 +1,53 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionAdminDataType:
+    properties:
+        studyOID:
+            expose: true
+            access_type: public_method
+            serialized_name: StudyOID
+            accessor:
+                getter: getStudyOID
+                setter: setStudyOID
+            xml_attribute: true
+            type: string
+        user:
+            expose: true
+            access_type: public_method
+            serialized_name: User
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getUser
+                setter: setUser
+            xml_list:
+                inline: true
+                entry_name: User
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\User>
+        location:
+            expose: true
+            access_type: public_method
+            serialized_name: Location
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getLocation
+                setter: setLocation
+            xml_list:
+                inline: true
+                entry_name: Location
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Location>
+        signatureDef:
+            expose: true
+            access_type: public_method
+            serialized_name: SignatureDef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getSignatureDef
+                setter: setSignatureDef
+            xml_list:
+                inline: true
+                entry_name: SignatureDef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\SignatureDef>

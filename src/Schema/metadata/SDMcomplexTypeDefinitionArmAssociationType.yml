@@ -1,0 +1,25 @@
+Medidata\RwsPhp\Schema\StudyDesign\SDMcomplexTypeDefinitionArmAssociationType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        armRef:
+            expose: true
+            access_type: public_method
+            serialized_name: ArmRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            accessor:
+                getter: getArmRef
+                setter: setArmRef
+            xml_list:
+                inline: true
+                entry_name: ArmRef
+                namespace: 'http://www.cdisc.org/ns/studydesign/v1.0'
+            type: array<Medidata\RwsPhp\Schema\StudyDesign\ArmRef>

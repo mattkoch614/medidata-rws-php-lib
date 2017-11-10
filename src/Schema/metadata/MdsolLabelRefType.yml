@@ -1,0 +1,29 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolLabelRefType:
+    properties:
+        labelOID:
+            expose: true
+            access_type: public_method
+            serialized_name: LabelOID
+            accessor:
+                getter: getLabelOID
+                setter: setLabelOID
+            xml_attribute: true
+            type: string
+        orderNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: OrderNumber
+            accessor:
+                getter: getOrderNumber
+                setter: setOrderNumber
+            xml_attribute: true
+            type: integer
+        mandatory:
+            expose: true
+            access_type: public_method
+            serialized_name: Mandatory
+            accessor:
+                getter: getMandatory
+                setter: setMandatory
+            xml_attribute: true
+            type: string

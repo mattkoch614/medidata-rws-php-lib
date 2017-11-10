@@ -1,0 +1,29 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionArchiveLayoutType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        pdfFileName:
+            expose: true
+            access_type: public_method
+            serialized_name: PdfFileName
+            accessor:
+                getter: getPdfFileName
+                setter: setPdfFileName
+            xml_attribute: true
+            type: string
+        presentationOID:
+            expose: true
+            access_type: public_method
+            serialized_name: PresentationOID
+            accessor:
+                getter: getPresentationOID
+                setter: setPresentationOID
+            xml_attribute: true
+            type: string

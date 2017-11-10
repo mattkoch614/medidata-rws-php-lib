@@ -1,0 +1,11 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionSignatureRefType:
+    properties:
+        signatureOID:
+            expose: true
+            access_type: public_method
+            serialized_name: SignatureOID
+            accessor:
+                getter: getSignatureOID
+                setter: setSignatureOID
+            xml_attribute: true
+            type: string

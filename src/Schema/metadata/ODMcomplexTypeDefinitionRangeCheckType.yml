@@ -1,0 +1,68 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionRangeCheckType:
+    properties:
+        comparator:
+            expose: true
+            access_type: public_method
+            serialized_name: Comparator
+            accessor:
+                getter: getComparator
+                setter: setComparator
+            xml_attribute: true
+            type: string
+        softHard:
+            expose: true
+            access_type: public_method
+            serialized_name: SoftHard
+            accessor:
+                getter: getSoftHard
+                setter: setSoftHard
+            xml_attribute: true
+            type: string
+        checkValue:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckValue
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getCheckValue
+                setter: setCheckValue
+            xml_list:
+                inline: true
+                entry_name: CheckValue
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\CheckValue>
+        formalExpression:
+            expose: true
+            access_type: public_method
+            serialized_name: FormalExpression
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getFormalExpression
+                setter: setFormalExpression
+            xml_list:
+                inline: true
+                entry_name: FormalExpression
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\FormalExpression>
+        measurementUnitRef:
+            expose: true
+            access_type: public_method
+            serialized_name: MeasurementUnitRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getMeasurementUnitRef
+                setter: setMeasurementUnitRef
+            type: Medidata\RwsPhp\Schema\ODM\MeasurementUnitRef
+        errorMessage:
+            expose: true
+            access_type: public_method
+            serialized_name: ErrorMessage
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getErrorMessage
+                setter: setErrorMessage
+            type: Medidata\RwsPhp\Schema\ODM\ErrorMessage

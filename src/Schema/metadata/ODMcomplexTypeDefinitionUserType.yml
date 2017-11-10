@@ -1,0 +1,184 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionUserType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        userType:
+            expose: true
+            access_type: public_method
+            serialized_name: UserType
+            accessor:
+                getter: getUserType
+                setter: setUserType
+            xml_attribute: true
+            type: string
+        loginName:
+            expose: true
+            access_type: public_method
+            serialized_name: LoginName
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getLoginName
+                setter: setLoginName
+            type: Medidata\RwsPhp\Schema\ODM\LoginName
+        displayName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayName
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getDisplayName
+                setter: setDisplayName
+            type: Medidata\RwsPhp\Schema\ODM\DisplayName
+        fullName:
+            expose: true
+            access_type: public_method
+            serialized_name: FullName
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getFullName
+                setter: setFullName
+            type: Medidata\RwsPhp\Schema\ODM\FullName
+        firstName:
+            expose: true
+            access_type: public_method
+            serialized_name: FirstName
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getFirstName
+                setter: setFirstName
+            type: Medidata\RwsPhp\Schema\ODM\FirstName
+        lastName:
+            expose: true
+            access_type: public_method
+            serialized_name: LastName
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getLastName
+                setter: setLastName
+            type: Medidata\RwsPhp\Schema\ODM\LastName
+        organization:
+            expose: true
+            access_type: public_method
+            serialized_name: Organization
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getOrganization
+                setter: setOrganization
+            type: Medidata\RwsPhp\Schema\ODM\Organization
+        address:
+            expose: true
+            access_type: public_method
+            serialized_name: Address
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAddress
+                setter: setAddress
+            xml_list:
+                inline: true
+                entry_name: Address
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Address>
+        email:
+            expose: true
+            access_type: public_method
+            serialized_name: Email
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getEmail
+                setter: setEmail
+            xml_list:
+                inline: true
+                entry_name: Email
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Email>
+        picture:
+            expose: true
+            access_type: public_method
+            serialized_name: Picture
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getPicture
+                setter: setPicture
+            type: Medidata\RwsPhp\Schema\ODM\Picture
+        pager:
+            expose: true
+            access_type: public_method
+            serialized_name: Pager
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getPager
+                setter: setPager
+            type: Medidata\RwsPhp\Schema\ODM\Pager
+        fax:
+            expose: true
+            access_type: public_method
+            serialized_name: Fax
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getFax
+                setter: setFax
+            xml_list:
+                inline: true
+                entry_name: Fax
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Fax>
+        phone:
+            expose: true
+            access_type: public_method
+            serialized_name: Phone
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getPhone
+                setter: setPhone
+            xml_list:
+                inline: true
+                entry_name: Phone
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Phone>
+        locationRef:
+            expose: true
+            access_type: public_method
+            serialized_name: LocationRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getLocationRef
+                setter: setLocationRef
+            xml_list:
+                inline: true
+                entry_name: LocationRef
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\LocationRef>
+        certificate:
+            expose: true
+            access_type: public_method
+            serialized_name: Certificate
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getCertificate
+                setter: setCertificate
+            xml_list:
+                inline: true
+                entry_name: Certificate
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Certificate>

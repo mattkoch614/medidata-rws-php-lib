@@ -3,5 +3,5 @@
 
 interface RwsResponseInterface
 {
-
+    function getSerializer();
 }

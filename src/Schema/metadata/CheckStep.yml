@@ -1,0 +1,3 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\CheckStep:
+    xml_root_name: CheckStep
+    xml_root_namespace: 'http://www.mdsol.com/ns/odm/metadata'

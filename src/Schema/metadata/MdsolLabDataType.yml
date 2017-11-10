@@ -1,0 +1,38 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolLabDataType:
+    properties:
+        low:
+            expose: true
+            access_type: public_method
+            serialized_name: Low
+            accessor:
+                getter: getLow
+                setter: setLow
+            xml_attribute: true
+            type: integer
+        high:
+            expose: true
+            access_type: public_method
+            serialized_name: High
+            accessor:
+                getter: getHigh
+                setter: setHigh
+            xml_attribute: true
+            type: integer
+        units:
+            expose: true
+            access_type: public_method
+            serialized_name: Units
+            accessor:
+                getter: getUnits
+                setter: setUnits
+            xml_attribute: true
+            type: string
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string

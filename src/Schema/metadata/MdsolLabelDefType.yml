@@ -1,0 +1,98 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolLabelDefType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: string
+        visible:
+            expose: true
+            access_type: public_method
+            serialized_name: Visible
+            accessor:
+                getter: getVisible
+                setter: setVisible
+            xml_attribute: true
+            type: string
+        indentLevel:
+            expose: true
+            access_type: public_method
+            serialized_name: IndentLevel
+            accessor:
+                getter: getIndentLevel
+                setter: setIndentLevel
+            xml_attribute: true
+            type: integer
+        fieldNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: FieldNumber
+            accessor:
+                getter: getFieldNumber
+                setter: setFieldNumber
+            xml_attribute: true
+            type: string
+        translatedText:
+            expose: true
+            access_type: public_method
+            serialized_name: TranslatedText
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getTranslatedText
+                setter: setTranslatedText
+            xml_list:
+                inline: true
+                entry_name: TranslatedText
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\TranslatedText>
+        viewRestriction:
+            expose: true
+            access_type: public_method
+            serialized_name: ViewRestriction
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getViewRestriction
+                setter: setViewRestriction
+            xml_list:
+                inline: true
+                entry_name: ViewRestriction
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\ViewRestriction>
+        helpText:
+            expose: true
+            access_type: public_method
+            serialized_name: HelpText
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getHelpText
+                setter: setHelpText
+            xml_list:
+                inline: true
+                entry_name: HelpText
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\HelpText>

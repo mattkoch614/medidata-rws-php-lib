@@ -1,0 +1,66 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolEditCheckDefType:
+    properties:
+        oID:
+            expose: true
+            access_type: public_method
+            serialized_name: OID
+            accessor:
+                getter: getOID
+                setter: setOID
+            xml_attribute: true
+            type: string
+        active:
+            expose: true
+            access_type: public_method
+            serialized_name: Active
+            accessor:
+                getter: getActive
+                setter: setActive
+            xml_attribute: true
+            type: string
+        bypassDuringMigration:
+            expose: true
+            access_type: public_method
+            serialized_name: BypassDuringMigration
+            accessor:
+                getter: getBypassDuringMigration
+                setter: setBypassDuringMigration
+            xml_attribute: true
+            type: string
+        needsRetesting:
+            expose: true
+            access_type: public_method
+            serialized_name: NeedsRetesting
+            accessor:
+                getter: getNeedsRetesting
+                setter: setNeedsRetesting
+            xml_attribute: true
+            type: string
+        checkStep:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckStep
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getCheckStep
+                setter: setCheckStep
+            xml_list:
+                inline: true
+                entry_name: CheckStep
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\CheckStep>
+        checkAction:
+            expose: true
+            access_type: public_method
+            serialized_name: CheckAction
+            xml_element:
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            accessor:
+                getter: getCheckAction
+                setter: setCheckAction
+            xml_list:
+                inline: true
+                entry_name: CheckAction
+                namespace: 'http://www.mdsol.com/ns/odm/metadata'
+            type: array<Medidata\RwsPhp\Schema\ODM\mdsol\CheckAction>

@@ -1,13 +1,15 @@
 <?php namespace Medidata\RwsPhp\Core\Responses;
 
-use http\Env\Response;
 use Sabre\Xml\Service;
 
+/**
+ * @property Service $serializer
+ * @property string $xmlString
+ */
 abstract class RWSXMLResponse implements RwsResponseInterface
 {
     protected $xmlString;
-    protected $xmlArray;
-
+    protected $serializer;
 
     /**
      * RWSXMLResponse constructor.
@@ -16,8 +18,7 @@ abstract class RWSXMLResponse implements RwsResponseInterface
     public function __construct($xmlString)
     {
         $this->xmlString = $xmlString;
-        $service = new Service();
-        $this->xmlArray = $service->parse($xmlString);
+        $this->serializer = new Service();
     }
 
     /**
@@ -31,11 +32,11 @@ abstract class RWSXMLResponse implements RwsResponseInterface
     }
 
     /**
-     * The array of key value pairs the that represent the XML object.
+     * Get the current serializer for the XML response.
      * @return mixed
      */
-    public function getXmlArray()
+    public function getSerializer()
     {
-        return $this->xmlArray;
+        return $this->serializer;
     }
 }

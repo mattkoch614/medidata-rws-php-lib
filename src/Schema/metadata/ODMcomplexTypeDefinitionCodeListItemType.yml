@@ -1,0 +1,44 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionCodeListItemType:
+    properties:
+        codedValue:
+            expose: true
+            access_type: public_method
+            serialized_name: CodedValue
+            accessor:
+                getter: getCodedValue
+                setter: setCodedValue
+            xml_attribute: true
+            type: string
+        rank:
+            expose: true
+            access_type: public_method
+            serialized_name: Rank
+            accessor:
+                getter: getRank
+                setter: setRank
+            xml_attribute: true
+            type: float
+        decode:
+            expose: true
+            access_type: public_method
+            serialized_name: Decode
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getDecode
+                setter: setDecode
+            type: Medidata\RwsPhp\Schema\ODM\Decode
+        alias:
+            expose: true
+            access_type: public_method
+            serialized_name: Alias
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAlias
+                setter: setAlias
+            xml_list:
+                inline: true
+                entry_name: Alias
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Alias>

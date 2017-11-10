@@ -1,0 +1,11 @@
+Medidata\RwsPhp\Schema\ODM\mdsol\MdsolCodingDictionaryRefType:
+    properties:
+        codingDictionaryOID:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingDictionaryOID
+            accessor:
+                getter: getCodingDictionaryOID
+                setter: setCodingDictionaryOID
+            xml_attribute: true
+            type: string

@@ -1,0 +1,87 @@
+Medidata\RwsPhp\Schema\ODM\ODMcomplexTypeDefinitionFormDataType:
+    properties:
+        formOID:
+            expose: true
+            access_type: public_method
+            serialized_name: FormOID
+            accessor:
+                getter: getFormOID
+                setter: setFormOID
+            xml_attribute: true
+            type: string
+        formRepeatKey:
+            expose: true
+            access_type: public_method
+            serialized_name: FormRepeatKey
+            accessor:
+                getter: getFormRepeatKey
+                setter: setFormRepeatKey
+            xml_attribute: true
+            type: string
+        transactionType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransactionType
+            accessor:
+                getter: getTransactionType
+                setter: setTransactionType
+            xml_attribute: true
+            type: string
+        auditRecord:
+            expose: true
+            access_type: public_method
+            serialized_name: AuditRecord
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAuditRecord
+                setter: setAuditRecord
+            type: Medidata\RwsPhp\Schema\ODM\AuditRecord
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: Medidata\RwsPhp\Schema\ODM\Signature
+        archiveLayoutRef:
+            expose: true
+            access_type: public_method
+            serialized_name: ArchiveLayoutRef
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getArchiveLayoutRef
+                setter: setArchiveLayoutRef
+            type: Medidata\RwsPhp\Schema\ODM\ArchiveLayoutRef
+        annotation:
+            expose: true
+            access_type: public_method
+            serialized_name: Annotation
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getAnnotation
+                setter: setAnnotation
+            xml_list:
+                inline: true
+                entry_name: Annotation
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\Annotation>
+        itemGroupData:
+            expose: true
+            access_type: public_method
+            serialized_name: ItemGroupData
+            xml_element:
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            accessor:
+                getter: getItemGroupData
+                setter: setItemGroupData
+            xml_list:
+                inline: true
+                entry_name: ItemGroupData
+                namespace: 'http://www.cdisc.org/ns/odm/v1.3'
+            type: array<Medidata\RwsPhp\Schema\ODM\ItemGroupData>
