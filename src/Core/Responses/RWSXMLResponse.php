@@ -1,5 +1,6 @@
 <?php namespace Medidata\RwsPhp\Core\Responses;
 
+use http\Env\Response;
 use Sabre\Xml\Service;
 
 abstract class RWSXMLResponse implements RwsResponseInterface
@@ -7,19 +8,16 @@ abstract class RWSXMLResponse implements RwsResponseInterface
     protected $xmlString;
     protected $xmlArray;
 
-    /**
-     * Named constructor, instantiate from an XML string.
-     * @param $xmlString
-     * @return static
-     */
-    public static function fromXmlString($xmlString)
-    {
-        $response = new static;
-        $response->xmlString = $xmlString;
 
+    /**
+     * RWSXMLResponse constructor.
+     * @param $xmlString
+     */
+    public function __construct($xmlString)
+    {
+        $this->xmlString = $xmlString;
         $service = new Service();
-        $response->xmlArray = $service->parse($xmlString);
-        return $response;
+        $this->xmlArray = $service->parse($xmlString);
     }
 
     /**

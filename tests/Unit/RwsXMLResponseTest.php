@@ -15,7 +15,7 @@ class RwsXMLResponseTest extends PHPUnit_Framework_TestCase{
     /** @test */
     public function it_can_parse_an_XML_string()
     {
-        $response = FakeResponse::fromXmlString($this->odmXML);
+        $response = new FakeResponse($this->odmXML);
         //no assertions, no exceptions mean we succeeded!
     }
 
