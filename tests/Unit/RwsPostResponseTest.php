@@ -13,7 +13,7 @@ class RwsPostResponseTest extends PHPUnit_Framework_TestCase
         $responseObject = new Response(200, ['X-Foo' => 'Bar'], $this->response1);
         $response = new RwsPostResponse($responseObject);
     }
-    
+
     private $response1 = '<?xml version="1.0" encoding="utf-8" ?>
                             <ODM FileType="Snapshot" ODMVersion="1.3" xmlns:mdsol="http://mdsol.com/ns/odm/metadata">
                                 <ClinicalData StudyOID="MediFlex(Dev)">
