@@ -5,7 +5,6 @@ use GuzzleHttp\Psr7\Response;
 class RwsResponse extends RWSXMLResponse
 {
     protected $responseObject;
-
     /**
      * RwsResponse constructor.
      * @param Response $responseObject
