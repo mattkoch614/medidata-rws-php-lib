@@ -3,6 +3,10 @@
 use GuzzleHttp\Psr7\Response;
 use SimpleXMLElement;
 
+/**
+ * @property-read string $SubjectNumberInStudy
+ * @property-read string SubjectNumberInStudySite
+ */
 class RwsPostResponse extends RwsResponse
 {
     public $SubjectNumberInStudy;

@@ -6,9 +6,13 @@ A comprehensive, fluent PHP API library for Medidata RAVE Web Services (RWS). Th
 Installation
 ------------
 
+This library is in development and not yet ready for use in projects.
+
 Usage
 -----
+TBA
 
 Credits
 -------
+TBA
 

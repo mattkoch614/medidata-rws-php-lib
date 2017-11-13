@@ -15,7 +15,6 @@ class RwsPostResponseTest extends PHPUnit_Framework_TestCase
         $response = new RwsPostResponse($responseObject);
         $this->assertEquals("999", $response->SubjectNumberInStudy);
         $this->assertEquals("23", $response->SubjectNumberInStudySite);
-
     }
 
     private $response1 = '<Response ReferenceNumber="82e942b0-48e8-4cf4-b299-51e2b6a89a1b"
