@@ -77,19 +77,19 @@ class RwsConnection implements RwsConnectionInterface {
      *
      * @param RwsRequest $request
      * @param null $timeout
-     * @return void
+     * @return mixed
      * @throws RwsException
      */
     public function sendRequest(RwsRequest $request, $timeout = null)
     {
-        $this->client == null ? $this->client =  new Client([
+        $this->client == null ? $this->client = new Client([
             // Base URI is used with relative requests
-            'base_uri' => $this->base_url,
+            'base_uri' => $this->base_url . "/",
             // You can set any number of default request options.
             'timeout'  => $timeout,
         ]) : $this->client;
 
-        $this->request = new Request($request->getHttpMethod(), $request->uri);
+        $this->request = new Request($request->getHttpMethod(), $request->UrlPath());
 
         if ($request->requiresAuthentication)
         {
@@ -105,7 +105,6 @@ class RwsConnection implements RwsConnectionInterface {
         $start_time = Carbon::now();
 
         try {
-
             $this->last_result = $this->client->send($this->request);
 
         } catch (ClientException $e) {
