@@ -5,12 +5,12 @@ use Medidata\RwsPhp\Core\Requests\TwoHundredRequest;
 use Medidata\RwsPhp\Core\RwsConnection;
 use Medidata\RwsPhp\Tests\Feature\Fakes\FakeRwsGetRequest;
 use Medidata\RwsPhp\Tests\Unit\Fakes\FakeResponse;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  *  @author Matthew Koch
  */
-class RwsXMLResponseTest extends PHPUnit_Framework_TestCase{
+class RwsXMLResponseTest extends TestCase {
 
     /** @test */
     public function it_can_parse_an_XML_string()

@@ -2,11 +2,11 @@
 
 use GuzzleHttp\Psr7\Response;
 use Medidata\RwsPhp\Core\Responses\RwsPostResponse;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Sabre\Xml\Service;
 use SimpleXMLElement;
 
-class RwsPostResponseTest extends PHPUnit_Framework_TestCase
+class RwsPostResponseTest extends TestCase
 {
     /** @test */
     public function it_can_correctly_parse_a_post_response()

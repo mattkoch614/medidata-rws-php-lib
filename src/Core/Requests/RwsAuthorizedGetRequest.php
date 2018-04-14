@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kochm
- * Date: 11/9/17
- * Time: 2:54 PM
- */
 
 namespace Medidata\RwsPhp\Core\Requests;
 

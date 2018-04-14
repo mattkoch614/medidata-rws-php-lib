@@ -8,13 +8,13 @@ use Medidata\RwsPhp\Core\Exceptions\RwsException;
 use Medidata\RwsPhp\Core\RwsConnection;
 use Medidata\RwsPhp\Tests\Feature\Fakes\FakeRwsGetRequest;
 use Mockery;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
 *  @author Matthew Koch
 */
-class RwsConnectionTest extends PHPUnit_Framework_TestCase{
-
+class RwsConnectionTest extends TestCase
+{
     private $mockClient;
     public function setUp()
     {

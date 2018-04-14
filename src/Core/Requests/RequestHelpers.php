@@ -2,7 +2,6 @@
 
 class RequestHelpers
 {
-
     /**
      * Create a url out of multiple parameters and a separator.
      * @param string $separator
